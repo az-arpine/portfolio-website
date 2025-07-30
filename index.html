@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/portfolio-site/img/favicon6_io/favicon.ico">
+    <link rel="icon" href="img/favicon6_io/favicon.ico">
     <title>Arpine Azatyan Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="home" class="page work-page">
     <header>
         <div>
-            <!-- Write your comments here -->
-            <!--img src="https://via.placeholder.com/150x50?text=Logo" alt="Arpine Azatyan"-->
-            <a href="index.html"><img src="img/Logo4.svg" alt="Arpine Azatyan"></a>    
+            <a href="index.html"><img src="img/Logo4.svg" alt="Arpine Azatyan" class="site-logo"></a>   <!-- Write your comments here -->    
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html"> My Work</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -43,10 +49,11 @@
                 <div><!-- open second column (used for text) -->
                     <h3>MuseMatch</h3>
                     <p>MuseMatch is a native app  that offers  space where connection feels easy, and creativity gathers momentum through real conversation.</p>
-                    <a href="project-musematch.html">view project</a>
+                    <a href="project-saveup.html" class="button">View Project</a>
                 </div><!-- end second column -->
             </div> <!-- end row -->
-             <div><!-- open row that holds (2) columns for project -->
+             
+            <div><!-- open row that holds (2) columns for project -->
                 <div><!-- open first column (used for image) -->
                         <picture>
                             <source media="(max-width: 767px)" srcset="img/SaveUp.png">
@@ -56,7 +63,7 @@
                 <div><!-- open second column (used for text) -->
                     <h3>SaveUp</h3>
                     <p>SaveUp is a responsive financial app built to help users save money quickly and intentionally — for trips, weddings, major purchases, or debt reduction.</p>
-                    <a href="#">view project</a>
+                    <a href="project-saveup.html" class="button">View Project</a>
                 </div><!-- end second column -->
             </div> <!-- end row -->
            
@@ -66,16 +73,17 @@
             <section class="contact">
                     <h2>Get in Touch</h2>
                     <p>If you would like to get in touch, please: 
-                       <a href="mailto:arpineazatyan@gmail.com?cc=arpineazatyan@gmail.com&subject=portfolio%20test%20&body=This%20is%20a%20test%20for%20a%20portfolio%20project!">reach out via email</a> 
-                        or via call: <a href="tel:+8572690604">+8572690604</a>
+                       <a href="mailto:arpineazatyan@gmail.com?cc=arpineazatyan@gmail.com&subject=portfolio%20test%20&body=This%20is%20a%20test%20for%20a%20portfolio%20project!" class="button contact">Send me an email</a>
+                       or via call: <a href="tel:+8572690604">+8572690604</a>
                     </p>
                     <ul>
                         <li><a href="https://www.behance.net/arpineazatyan" target="_blank">
-                            <img src="img/behance-logo.svg" alt="Behance" width="32" height="32">
+                            <img src="img/behance-logo.svg" alt="Behance" class="social-icon" width="32" height="32">
                         </a></li>
                         <li><a href="https://www.linkedin.com/in/arpine-azatyan" target="_blank">
-                            <img src="img/linkedin-logo.svg" alt="LinkedIn" width="32" height="32"></a></li>
+                            <img src="img/linkedin-logo.svg" alt="LinkedIn" class="social-icon" width="32" height="32"></a></li>
                     </ul>
+                    <a href="#top" class="back-to-top">↑ Back to Top</a>
                     <p>Copyright Arpine Azatyan 2025</p>
             </section>
     </footer>

@@ -1,0 +1,121 @@
+body {
+  background-color: #F2F2F7; /*background color */;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; /* Sets the base font size */
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: rgba(0, 0, 0, 1);
+}
+
+h1, h2, h3, h4 {
+  font-family: "Lora", serif;
+  font-weight: 400; /* Default font weight for headings */
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+}
+/* h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+*/
+ h1 {
+  font-size: clamp(2rem, 5vw, 3rem);    /* ~32–48px */
+  font-weight: 700;                     /* Bold */
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);  /* ~28–36px */
+  font-weight: 600;                         /* Semi-bold */
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 1.75rem);   /* ~24–28px */
+  font-weight: 500;                         /* Medium */
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);   /* ~20–24px */
+  font-weight: 500;                         /* Medium */
+}
+
+
+img /* General images */{
+  width: 100%;
+}
+.site-logo /* Logo image */ {
+  width: 20%;
+}
+.social-icon /* Social media icons */ {
+  width:  32px; /* Set a fixed width for social icons */
+  height:  32px; /* Set a fixed height for social icons */
+}
+
+a {
+  color: #4873E3; /* Primary Blue */
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #4873E3;   /* Primary Blue */
+  opacity: 0.8; /* Makes the link slightly transparent when hovered */
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:visited { /* visited link */
+  color:#7b2626;
+}
+a:active { /* selected link */
+  color: #4c1c1c;
+}
+
+logo {
+  width: 30%;
+  
+}
+
+
+.button {
+  display: inline-block;
+  background-color: #4873E3;
+  color: #f4f4f6;
+  font-weight: 400;
+  padding: 10px 16px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+  .button:hover{
+  opacity: 0.8; /* Makes the button slightly transparent when hovered */
+  color: #f4f4f6;   /* Keeps the text color consistent on hover */
+  text-decoration: none; /* No underlining on hover */
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #4873e3;
+  text-transform: uppercase;
+  border: 2px solid #4873e3;
+}
+
+.button.contact:hover {
+  opacity: 0.8; /* Makes the button slightly transparent when hovered */
+  color: #4873e3;
+}
