@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon6_io/favicon.ico">
+    <link rel="icon" href="img/favicon6_io/favicon-32x32.png">
     <title>Get to know me</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -20,14 +20,14 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html"> My Work</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div>
+        <div id="about-me" class="container">
             <h1>About</h1>
             <picture>
                 <source srcset="img/My-photo.jpg" media="(min-width: 650px)">
@@ -40,10 +40,15 @@
                <p>On a beautiful day, I love spending time outdoors with my husband and two active children. You can also find me in my backyard — either visualizing my next project or tending to my garden and flower beds.</p>
             <a href="img/files/arpine-placeholderresume-.pdf" class="button" target="_blank">Download Resume</a>
          </div>
-         <h2>Skills and Tools</h2>
-         <div class="skills">
-            <h3>Skills</h3>
-            <ul>
+         <div class="container">
+            <h2>My Journey</h2>
+            <p>My journey in design and development is a blend of my musical background and my passion for creating functional, user-centered designs. I believe that every project is an opportunity to learn and grow, and I approach each challenge with enthusiasm and creativity.</p>
+         </div>
+         <section id="skills-tools" class="container">
+            <h2>Skills and Tools</h2>
+            <div class="skills">
+               <h3>Skills</h3>
+               <ul>
                 <li>UI/UX Design</li>
                 <li>Wireframing</li>
                 <li>Prototyping</li>
@@ -66,8 +71,9 @@
                 <li>Html, CSS, JavaScript Basics</li>
             </ul>
         </div>
+        </section>
      </main>
-    <footer id="contact">
+    <footer id="contact" class="container">
             <section class="contact">
                     <h2>Get in Touch</h2>
                     <p>If you would like to get in touch, please: 
@@ -81,6 +87,7 @@
                         <li><a href="https://www.linkedin.com/in/arpine-azatyan" target="_blank">
                             <img src="img/linkedin-logo.svg" alt="LinkedIn" width="32" height="32"></a></li>
                     </ul>
+                    <a href="#" class="back-to-top">↑</a>
                     <p>Copyright Arpine Azatyan 2025</p>
             </section>
     </footer>

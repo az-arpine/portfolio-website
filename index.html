@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon6_io/favicon.ico">
+    <link rel="icon" href="img/favicon6_io/favicon-32x32.png">
     <title>Arpine Azatyan Portfolio</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -16,30 +16,33 @@
 </head>
 <body id="home" class="page work-page">
     <header>
-        <div>
+        <div class="container">
             <a href="index.html"><img src="img/Logo4.svg" alt="Arpine Azatyan" class="site-logo"></a>   <!-- Write your comments here -->    
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html"> My Work</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+            <ul class="navigation">
+                <li><a href="index.html"> Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
        <div class="main">
-         <section class="introduction">
+         <section id="hero" class="container">
             <h1>Welcome to my portfolio</h1>
             <span>My name is Arpine Azatyan</span>
                 <p>Hello, I am a musician and a UI/UX designer with love for beautiful things that are functional and can make life simpler and more delightful.</p>
          </section>
        </div>
         <section class="work">
-            <div>
-            <h2>My Work</h2>
-            </div>
-            <div><!-- open row that holds (2) columns for project -->
+            <div class="container">
+                <div class="row">
+                    <h1>My Projects</h1>
+                    <p>Here are some of my recent projects that showcase my skills in UI/UX design and development.</p>
+                <h2>My Work</h2>
+                </div>
+            <div class="row"><!-- open row that holds (2) columns for project -->
                 <div><!-- open first column (used for image) -->
                         <picture>
                             <source media="(max-width: 767px)" srcset="img/MuseMatch.png">
@@ -49,11 +52,11 @@
                 <div><!-- open second column (used for text) -->
                     <h3>MuseMatch</h3>
                     <p>MuseMatch is a native app  that offers  space where connection feels easy, and creativity gathers momentum through real conversation.</p>
-                    <a href="project-saveup.html" class="button">View Project</a>
+                    <a href="project-musematch.html" class="button">View Project</a>
                 </div><!-- end second column -->
             </div> <!-- end row -->
-             
-            <div><!-- open row that holds (2) columns for project -->
+
+            <div class="row"><!-- open row that holds (2) columns for project -->
                 <div><!-- open first column (used for image) -->
                         <picture>
                             <source media="(max-width: 767px)" srcset="img/SaveUp.png">
@@ -66,26 +69,28 @@
                     <a href="project-saveup.html" class="button">View Project</a>
                 </div><!-- end second column -->
             </div> <!-- end row -->
-           
+        </div>
       </section>
     </main>
    <footer id="contact">
-            <section class="contact">
-                    <h2>Get in Touch</h2>
-                    <p>If you would like to get in touch, please: 
-                       <a href="mailto:arpineazatyan@gmail.com?cc=arpineazatyan@gmail.com&subject=portfolio%20test%20&body=This%20is%20a%20test%20for%20a%20portfolio%20project!" class="button contact">Send me an email</a>
-                       or via call: <a href="tel:+8572690604">+8572690604</a>
-                    </p>
-                    <ul>
-                        <li><a href="https://www.behance.net/arpineazatyan" target="_blank">
-                            <img src="img/behance-logo.svg" alt="Behance" class="social-icon" width="32" height="32">
-                        </a></li>
-                        <li><a href="https://www.linkedin.com/in/arpine-azatyan" target="_blank">
-                            <img src="img/linkedin-logo.svg" alt="LinkedIn" class="social-icon" width="32" height="32"></a></li>
-                    </ul>
+        <section class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>If you would like to get in touch, please: 
+                    <a href="mailto:arpineazatyan@gmail.com?cc=arpineazatyan@gmail.com&subject=portfolio%20test%20&body=This%20is%20a%20test%20for%20a%20portfolio%20project!" class="button contact">Send me an email</a>
+                    or via call: <a href="tel:+8572690604">+8572690604</a>
+                 </p>
+                <ul>
+                     <li><a href="https://www.behance.net/arpineazatyan" target="_blank">
+                        <img src="img/behance-logo.svg" alt="Behance" class="social-icon" width="32" height="32">
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/arpine-azatyan" target="_blank">
+                           <img src="img/linkedin-logo.svg" alt="LinkedIn" class="social-icon" width="32" height="32"></a></li>
+                </ul>
                     <a href="#top" class="back-to-top">↑ Back to Top</a>
                     <p>Copyright Arpine Azatyan 2025</p>
-            </section>
+            </div>
+        </section>
     </footer>
 </body>
 </html>

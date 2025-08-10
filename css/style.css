@@ -1,5 +1,9 @@
+
+* {
+  box-sizing: border-box;
+}
 body {
-  background-color: #F2F2F7; /*background color */;
+  background-color: #f7f2f5; /*background color */;
   font-family: "Poppins", sans-serif;
   font-size: 16px; /* Sets the base font size */
   font-weight: 400;
@@ -36,22 +40,22 @@ h4 {
 }
 */
  h1 {
-  font-size: clamp(2rem, 5vw, 3rem);    /* ~32–48px */
+  font-size: clamp(1.5rem, 5vw, 3rem);    /* ~32–48px */
   font-weight: 700;                     /* Bold */
 }
 
 h2 {
-  font-size: clamp(1.75rem, 4vw, 2.25rem);  /* ~28–36px */
+  font-size: clamp(1.25rem, 4vw, 2.25rem);  /* ~28–36px */
   font-weight: 600;                         /* Semi-bold */
 }
 
 h3 {
-  font-size: clamp(1.5rem, 3vw, 1.75rem);   /* ~24–28px */
+  font-size: clamp(1rem, 3vw, 1.75rem);   /* ~24–28px */
   font-weight: 500;                         /* Medium */
 }
 
 h4 {
-  font-size: clamp(1.25rem, 2vw, 1.5rem);   /* ~20–24px */
+  font-size: clamp(0.75rem, 2vw, 1.5rem);   /* ~20–24px */
   font-weight: 500;                         /* Medium */
 }
 
@@ -59,29 +63,25 @@ h4 {
 img /* General images */{
   width: 100%;
 }
-.site-logo /* Logo image */ {
-  width: 20%;
-}
+
+
 .social-icon /* Social media icons */ {
   width:  32px; /* Set a fixed width for social icons */
   height:  32px; /* Set a fixed height for social icons */
 }
 
 a {
-  color: #4873E3; /* Primary Blue */
+  color:#4873E3; /* Primary Blue */
   text-decoration: none; /* No underlining */
 }
 a:hover {
-  color: #4873E3;   /* Primary Blue */
   opacity: 0.8; /* Makes the link slightly transparent when hovered */
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
-a:visited { /* visited link */
-  color:#7b2626;
-}
-a:active { /* selected link */
-  color: #4c1c1c;
+a:visited  { /* visited link */
+  color:163381; /* Dark Blue */
+  text-decoration: none; /* No underlining */
 }
 
 logo {
@@ -118,4 +118,118 @@ logo {
 .button.contact:hover {
   opacity: 0.8; /* Makes the button slightly transparent when hovered */
   color: #4873e3;
+}
+
+
+selector {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+}
+selector {
+  position: relative;
+}
+selector {
+  float: right;
+}
+selector {
+  width: 80%;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+#hero {
+  background-color: #ffe4c4;
+  display: inline-block;
+  width: 100%;
+}
+
+
+.site-logo {
+  max-width: 250px;
+  text-align: center;
+}
+header  {
+  background-color: #ffe4c4;                 
+  opacity: 0.8;                               
+  padding: 10px 0;                            
+  border-bottom: 3px solid #853455;           
+  text-align: center;                         
+  position: fixed;                          
+  width: 100%;                                
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);  /* balanced drop shadow */
+  z-index: 1000;                              /* keep header above other content */
+}
+
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:#4873e3;
+}
+
+
+
+  nav > ul > li > a:hover {
+    opacity: 0.8;
+  }
+
+   nav > ul > li > a:visited {
+  color:#163381;
+}
+
+main {
+  padding-top: 133px; /* Adjusts for fixed header */
+}
+#content {
+  background-color: #ffe4c4;
+  display: inline-block;
+  width: 100%;
+}
+#about-me {
+  background-color: #ffe4c4;
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #4873e3;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 11px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0.7;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+  transform: translateY(-3px);
 }
