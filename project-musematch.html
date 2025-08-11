@@ -18,7 +18,6 @@
     <header>
         <div>
            <a href="index.html"><img src="img/Logo4.svg" alt="Arpine Azatyan" class="site-logo"></a>    
-        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Work</a></li>
@@ -26,23 +25,28 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        </div>
     </header>
     <main>
         <div id="content" class="container">
             <h2>Table of content</h2>
             <ul>
-                <li><a href="#project-overview">Project Overview</a></li>
-                <li><a href="#my-role">My Role</a></li>
-                <li><a href="#hypothesis">Hypothesis</a></li>
-                <li><a href="#problem">Problem</a></li>
-                <li><a href="#solution">Solution</a></li>
-                <li><a href="#user">User</a></li>
-                <li><a href="#styleguide">Styleguide</a></li>
-                <li><a href="#design-evolution">Design Evolution</a></li>
-                <li><a href="#musematch-screens">MuseMatch Screens</a></li>
-                <li><a href="#takeaways">Takeaways</a></li>
-                <li><a href="#next-steps">Next Steps</a></li>
-                <li><a href="#prototype">Prototype</a></li>
+                <div class="column col-md-6 col-lg-7">
+                    <li><a href="#project-overview">Project Overview</a></li>
+                    <li><a href="#my-role">My Role</a></li>
+                    <li><a href="#hypothesis">Hypothesis</a></li>
+                    <li><a href="#problem">Problem</a></li>
+                    <li><a href="#solution">Solution</a></li>
+                    <li><a href="#user">User</a></li>
+                </div>
+                <div class="column col-md-6 col-lg-7">
+                    <li><a href="#styleguide">Styleguide</a></li>
+                    <li><a href="#design-evolution">Design Evolution</a></li>
+                    <li><a href="#musematch-screens">MuseMatch Screens</a></li>
+                    <li><a href="#takeaways">Takeaways</a></li>
+                    <li><a href="#next-steps">Next Steps</a></li>
+                    <li><a href="#prototype">Prototype</a></li>
+                </div>
             </ul>
         </div>
         <div class="container">
@@ -76,6 +80,7 @@
             </picture>
         </div>
         <div id="problem" class="container">
+            <div class="column col-md-6 col-lg-7">
             <h2>Problem</h2>
             <p>In the creative world, talent alone isn’t enough — finding the right people to collaborate with, learn from, or gain support from is often what determines whether a project thrives or never gets off the ground.</p>
                 <ul>
@@ -83,8 +88,10 @@
                     <li>Creatives need intentional, aligned, supportive connections.</li>
                     <li>Without that, many feel isolated, stuck, or unsupported.</li>
                 </ul>
+            </div>
         </div>
         <div id="solution" class="container">
+            <div class="column col-md-6 col-lg-7">
             <h2>Solution</h2>
             <p>MuseMatch is a user-centric platform built to support the full spectrum of creative connection. The platform blends AI-driven matchmaking, dynamic profiles, and structured mentorship tools to help creatives:</p>
                 <ul>
@@ -93,6 +100,7 @@
                     <li>Secure funding by connecting with sponsors, patrons, or brands that support the arts.</li>
                     <li>Showcase their work through personalized profiles.</li>
                 </ul>
+            </div>
         </div> 
         <div id="user" class="container">       
             <h2>User</h2>
@@ -102,14 +110,18 @@
                 <img src="img/musematch-portfolio-slides/1200px/user-wants-needs.png" alt="MuseMatch">
             </picture>
             <h3>User Personas</h3>
-            <picture>
-                <source srcset="img/musematch-portfolio-slides/1200px/user-persona1.png" media="(min-width: 650px)">
-                <img src="img/musematch-portfolio-slides/1200px/user-persona1.png" alt="MuseMatch">
-            </picture>
-            <picture>
-                <source srcset="img/musematch-portfolio-slides/1200px/user-persona2.png" media="(min-width: 650px)">
-                <img src="img/musematch-portfolio-slides/1200px/user-persona2.png" alt="MuseMatch">
-            </picture>
+            <div class="column col-md-6 col-lg-7">
+                <picture>
+                    <source srcset="img/musematch-portfolio-slides/1200px/user-persona1.png" media="(min-width: 650px)">
+                    <img src="img/musematch-portfolio-slides/1200px/user-persona1.png" alt="MuseMatch">
+                </picture>
+            </div>
+            <div class="column col-md-6 col-lg-7">
+                <picture>
+                    <source srcset="img/musematch-portfolio-slides/1200px/user-persona2.png" media="(min-width: 650px)">
+                    <img src="img/musematch-portfolio-slides/1200px/user-persona2.png" alt="MuseMatch">
+                </picture>
+            </div>
             <h3>User Flow</h3>
             <ul>
                 <li>Users start by selecting a creative goal: collaboration, mentorship, or sponsorship.</li>
@@ -126,14 +138,25 @@
         </div>
         <div id="styleguide" class="container">
            <h2>Styleguide</h2>
-           <h3>The Visual Mark</h3>
-            <p>anchors the platform’s identity around creativity and connection. It serves as a symbol of the platform’s mission to help artists grow, collaborate, and find new opportunities through seamless, user-centered experiences.</p>
-                <picture>
+           <div class="row"><!-- open row that holds (2) columns for project -->
+            <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
+                <h3>The Visual Mark</h3>
+                <p>anchors the platform’s identity around creativity and connection. It serves as a symbol of the platform’s mission to help artists grow, collaborate, and find new opportunities through seamless, user-centered experiences.</p>
+            </div>  
+            <div class="column col-md-6 col-lg-7"><!-- open first column (used for image) -->
+
+            <picture>
                     <source srcset="img/musematch-portfolio-slides/600px/main-visual-mark.png" media="(min-width: 650px)">
                     <img src="img/musematch-portfolio-slides/600px/main-visual-mark.png" alt="Visual Mark">
                 </picture>
-           <h3>Main Navigation Card Imagery</h3>
-            <p>Stunning, symbolic visuals are layered behind each navigation card—adding mood, texture, and a sense of atmosphere without competing with the content. Each image is carefully chosen to evoke one of the artistic “muses,” subtly guiding users as they explore different creative paths. The result is a balance of clarity and emotional tone that elevates the overall experience.</p>
+            </div><!-- close first column -->
+            </div><!-- close row -->
+            <div class="row"><!-- open row that holds (2) columns for project -->
+            <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
+                <h3>Main Navigation Card Imagery</h3>
+                <p>Stunning, symbolic visuals are layered behind each navigation card—adding mood, texture, and a sense of atmosphere without competing with the content. Each image is carefully chosen to evoke one of the artistic “muses,” subtly guiding users as they explore different creative paths. The result is a balance of clarity and emotional tone that elevates the overall experience.</p>
+            </div>   
+            <div class="column col-md-6 col-lg-7"><!-- open first column (used for image) -->
                 <picture>
                     <source srcset="img/musematch-portfolio-slides/600px/imagery2.png" media="(min-width: 650px)">
                     <img src="img/musematch-portfolio-slides/600px/imagery2.png" alt="Main Navigation Card Imagery">
@@ -142,6 +165,8 @@
                     <source srcset="img/musematch-portfolio-slides/600px/imagery1.png" media="(min-width: 650px)">
                     <img src="img/musematch-portfolio-slides/600px/imagery1.png" alt="Main Navigation Card Imagery">
                 </picture>
+            </div><!-- close first column -->
+            </div><!-- close row -->
             <h3>Color</h3>
             <picture>
                 <source srcset="img/musematch-portfolio-slides/600px/color.png" media="(min-width: 650px)">
@@ -168,22 +193,29 @@
         <div id="design-evolution"  class="container">
             <h2>Design Evolution</h2>
             <p>Throughout the design process I conducted multiple rounds of informal usability testing with 7 users from various backgrounds.</p>
-            <h3>Focus areas </h3>
-            <ul>
-                <li>User flow clarity</li>
-                <li>Visual consistency</li>
-                <li>Feature comprehension</li>
-                <li>Typography</li>
-                <li>Usability across iOS and Android mockups</li>
-            </ul>
-            <h3>Feedback gathered through</h3>
-            <ul>
-                <li>Walkthroughs</li>
-                <li>Prototype interactions</li>
-                <li>Follow-up conversations for qualitative insights</li>
-            </ul>
+            <div class="row">
+                <div class="column col-md-6 col-lg-7">
+                <h3>Focus areas </h3>
+                <ul>
+                    <li>User flow clarity</li>
+                    <li>Visual consistency</li>
+                    <li>Feature comprehension</li>
+                    <li>Typography</li>
+                    <li>Usability across iOS and Android mockups</li>
+                </ul>
+                </div>
+                <div class="column col-md-6 col-lg-5">
+                <h3>Feedback gathered through</h3>
+                <ul>
+                    <li>Walkthroughs</li>
+                    <li>Prototype interactions</li>
+                    <li>Follow-up conversations for qualitative insights</li>
+                </ul>
+                </div>
+            </div>
+            <div class="row">
+            <div class="column col-md-6 col-lg-7">
             <h3>What Worked</h3>
-            <span>
                 <ul>
                     <li>Clear and thematic visual design</li>
                     <li> Smooth onboarding and single sign-in options</li>
@@ -191,18 +223,19 @@
                     <li>The app concept felt meaningful to creatives</li>
                     <li>Positive emotional tone in onboarding/chat</li>
                 </ul>
-            </span>
+            </div>
+            <div class="column col-md-6 col-lg-7">
             <h3> What needed to Improve?</h3>
-            <span>
                 <ul>
                     <li>All AI chat paths lead to the same generic screen</li>
                     <li>Inconsistent navigation: notification and back buttons behave unpredictably</li>
                     <li>Inconsistent navigation: notification and back buttons behave unpredictably</li>
                     <li>Some buttons unresponsive (e.g., collaboration, music, design)</li>
                     <li>Some buttons unresponsive (e.g., collaboration, music, design)</li>
-                    <li>Scrolling doesn’t work on key screens (e.g., home, category views)</li>
+                    <li>Scrolling doesn't work on key screens (e.g., home, category views)</li>
                 </ul>
-            </span>
+            </div>
+        </div>
         </div>
         <div id="musematch-screens" class="container">
             <h2>MuseMatch Screens </h2>
@@ -257,12 +290,12 @@
                        or via call: <a href="tel:+8572690604">+8572690604</a>
                     </p>
                     <ul>
-                        <li><a href="https://www.behance.net/arpineazatyan" target="_blank">
-                            <img src="img/behance-logo.svg" alt="Behance" width="32" height="32">
-                        </a></li>
-                        <li><a href="https://www.linkedin.com/in/arpine-azatyan" target="_blank">
-                            <img src="img/linkedin-logo.svg" alt="LinkedIn" width="32" height="32"></a></li>
-                    </ul>
+                     <li><a href="https://www.behance.net/arpineazatyan" target="_blank">
+                        <img src="img/behance-logo.svg" alt="Behance" class="social-icon" width="32" height="32">
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/arpine-azatyan" target="_blank">
+                           <img src="img/linkedin-logo.svg" alt="LinkedIn" class="social-icon" width="32" height="32"></a></li>
+                </ul>
                     <a href="#" class="back-to-top">↑</a>
                     <p>Copyright Arpine Azatyan 2025</p>
             </section>

@@ -64,10 +64,14 @@ img /* General images */{
   width: 100%;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 .social-icon /* Social media icons */ {
   width:  32px; /* Set a fixed width for social icons */
   height:  32px; /* Set a fixed height for social icons */
+  list-style-type: none;
+  transition: 2s opacity
 }
 
 a {
@@ -84,10 +88,6 @@ a:visited  { /* visited link */
   text-decoration: none; /* No underlining */
 }
 
-logo {
-  width: 30%;
-  
-}
 
 
 .button {
@@ -100,6 +100,12 @@ logo {
   text-decoration: none;
   transition: opacity 0.2s;
   cursor: pointer;
+  margin-bottom: 40px;
+  transition: 0.2s opacity;
+}
+
+.button.contact {
+  margin-bottom: 0px;
 }
 
   .button:hover{
@@ -150,6 +156,7 @@ selector {
   background-color: #ffe4c4;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 
@@ -157,6 +164,7 @@ selector {
   max-width: 250px;
   text-align: center;
 }
+
 header  {
   background-color: #ffe4c4;                 
   opacity: 0.8;                               
@@ -168,6 +176,19 @@ header  {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);  /* balanced drop shadow */
   z-index: 1000;                              /* keep header above other content */
 }
+
+.navigation a {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4873e3;
+  text-decoration: none;
+  transition: 2s opacity;
+}
+
+.navigation a:hover {
+  opacity: 0.8;
+} 
+
 
 
 nav > ul {
@@ -188,7 +209,6 @@ nav > ul > li > a {
 }
 
 
-
   nav > ul > li > a:hover {
     opacity: 0.8;
   }
@@ -205,6 +225,7 @@ main {
   display: inline-block;
   width: 100%;
 }
+
 #about-me {
   background-color: #ffe4c4;
   display: inline-block;
@@ -232,4 +253,151 @@ main {
 .back-to-top:hover {
   opacity: 1;
   transform: translateY(-3px);
+}
+footer {
+  display: block;           /* ensure it starts on its own line */
+  clear: both;               /* push below any floated content */
+  width: 100%;               /* span full width */
+  margin-top: 40px;          /* space above footer */
+  padding: 20px 0;           /* padding inside footer */
+  background-color: #f8f8f8; /* example background */
+  border-top: 1px solid #ddd;
+}
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.yerevan-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+@keyframes cloud-move {
+  from { transform: translateX(0); }
+  to { transform: translateX(200px); }
+}
+
+@keyframes sun-glow {
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
+}
+
+.sun circle {
+  animation: sun-glow 4s linear infinite alternate;
+}
+
+.cloud-1,
+.cloud-2,
+.cloud-front {
+  animation: cloud-move 30s linear infinite alternate;
+}
+.cloud-back {
+  animation: cloud-move 34s linear infinite alternate;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+ header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  main {
+    padding-top: 99px; /* Adjusts for fixed header */
+  }
+
+  body {
+  font-size: 18px; /* Sets the base font size for medium devices */
+  line-height: 1.8; /* Sets the line-height to 1.8 * the font-size */
+}
+
+  #hero span {
+  display: block;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 0 10px;
+}
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.page.about-page main {
+  margin-bottom: 40px;
+}
+.page.about-page h3 { margin-top: 0;}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px)
+ {
+  body {
+    font-size: 20px; /* Sets the base font size for large devices */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  }
+
+  .col-lg-7 {
+    flex: 0 0 58.3333%; /* 7/12 width */
+    max-width: 58.3333%;
+  }
+
+  .col-lg-5 {
+    flex: 0 0 41.6667%; /* 5/12 width */
+    max-width: 41.6667%;
+  }
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
 }
