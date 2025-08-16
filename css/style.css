@@ -67,11 +67,24 @@ img /* General images */{
 html {
   scroll-behavior: smooth;
 }
-.social-icon /* Social media icons */ {
+
+.social-icon 
+ {
   width:  32px; /* Set a fixed width for social icons */
   height:  32px; /* Set a fixed height for social icons */
-  list-style-type: none;
-  transition: 2s opacity
+  
+}
+
+footer ul {
+  list-style: none;  
+  margin: 0;         
+  padding: 0;        
+  transition: 2s opacity;
+}
+
+footer ul li {
+  display: inline-block;  /* puts icons side by side */
+  margin: 0 5px;          /* space between icons */
 }
 
 a {
@@ -152,30 +165,51 @@ selector {
   text-align: center; /* Centers text */
 }
 
-#hero {
+.container-hero {
   background-color: #ffe4c4;
   display: inline-block;
   width: 100%;
   text-align: center;
+  margin: 0 auto; /* Centers the hero section */
+  padding-left: 15px; /* Adds padding to the left */
+  padding-right: 15px; /* Adds padding to the right */
 }
 
+.container-table-of-content {
+  background-color: #ffe4c4;
+  display: inline-block;
+  width: 100%;
+  align-content: center; /* Centers the content */
+  margin: 0 auto; /* Centers the table of content section */
+  padding-left: 15px; /* Adds padding to the left */
+  padding-right: 15px; /* Adds padding to the right */
+  padding-bottom: 40px; /* Adds padding to the bottom */
+}
+
+
+header {
+  background-color: #ffe4c4;
+  opacity: 0.8;
+  padding: 10px 0;
+  border-bottom: 3px solid #853455;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  z-index: 1000;
+  text-align: center;           /* center contents on mobile */
+}
 
 .site-logo {
   max-width: 250px;
-  text-align: center;
+  margin-top: 4px; /* Stops auto-centering on desktop */;
 }
-
-header  {
-  background-color: #ffe4c4;                 
-  opacity: 0.8;                               
-  padding: 10px 0;                            
-  border-bottom: 3px solid #853455;           
-  text-align: center;                         
-  position: fixed;                          
-  width: 100%;                                
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);  /* balanced drop shadow */
-  z-index: 1000;                              /* keep header above other content */
-}
+ 
+nav {
+    width: auto;
+    margin-top: 4px;
+    text-align: center; /* Centers the navigation links */ 
+    margin: 15px
+  }
 
 .navigation a {
   text-transform: uppercase;
@@ -183,13 +217,12 @@ header  {
   color: #4873e3;
   text-decoration: none;
   transition: 2s opacity;
-}
+}                           
+
 
 .navigation a:hover {
   opacity: 0.8;
 } 
-
-
 
 nav > ul {
   list-style-type: none;
@@ -218,7 +251,7 @@ nav > ul > li > a {
 }
 
 main {
-  padding-top: 133px; /* Adjusts for fixed header */
+  padding: 133px 0 0; /* Adjusts for fixed header */
 }
 #content {
   background-color: #ffe4c4;
@@ -254,6 +287,7 @@ main {
   opacity: 1;
   transform: translateY(-3px);
 }
+
 footer {
   display: block;           /* ensure it starts on its own line */
   clear: both;               /* push below any floated content */
@@ -325,19 +359,29 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-}
+
  header {
     text-align: unset;
     padding: 20px 0 13px;
   }
 
+  header .container-header {
+    padding: 0 15px;
+    align-items: center; /* Vertically centers the items */
+  }
+  .site-logo {
+    margin-top: 4px;                  /* stop auto-centering on desktop */
+    float: left;
+  }
+
   nav {
     width: auto;
-    float: right;
     margin-top: 4px;
+    float: right; /* Centers the navigation links */ 
   }
+  
   main {
-    padding-top: 99px; /* Adjusts for fixed header */
+    padding-top: 125px; /* Adjusts for fixed header */
   }
 
   body {
@@ -361,16 +405,21 @@ Medium devices (640px and larger)
   clear: both;
   display: table;
 }
+
+
 .page.about-page main {
   margin-bottom: 40px;
 }
 .page.about-page h3 { margin-top: 0;}
 
+}
+
 /* ==============================
-Large devices (1024px or larger)
+Large devices (1024px and larger)
 ================================= */
 @media only screen and (min-width: 1024px)
  {
+  
   body {
     font-size: 20px; /* Sets the base font size for large devices */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -385,12 +434,45 @@ Large devices (1024px or larger)
     flex: 0 0 41.6667%; /* 5/12 width */
     max-width: 41.6667%;
   }
+  .col-lg-6 {
+    flex: 0 0 50%; /* 6/12 width */
+    max-width: 50%;
+  }
+  
+
+
+
+   
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
+  header {
+    padding: 20px 0 13px;
+    text-align: left; /* Aligns header text to the left */
+    align-items: center;
+  }
+
+
+  .site-logo {
+    margin: 0; /* Stops auto-centering on desktop */
+    float: left; /* Floats the logo to the left */
+  }
+
+  nav {
+   float: right; /* Aligns navigation links to the right */
+  }
+
+  nav > ul {
+    display: flex;
+    gap: 18px;
+  }
+
 }
+
+
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */

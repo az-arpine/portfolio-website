@@ -16,7 +16,8 @@
 </head>
 <body id="musematch" class="page project-page">
     <header>
-        <div>
+        <div class="container-header">
+         <div class="navtoggle" id="myNavtoggle">  
            <a href="index.html"><img src="img/Logo4.svg" alt="Arpine Azatyan" class="site-logo"></a>    
         <nav>
             <ul>
@@ -26,9 +27,10 @@
             </ul>
         </nav>
         </div>
+        </div>
     </header>
     <main>
-        <div id="content" class="container">
+        <div id="content" class="container-table-of-content">
             <h2>Table of content</h2>
             <ul>
                 <div class="column col-md-6 col-lg-7">
@@ -110,17 +112,19 @@
                 <img src="img/musematch-portfolio-slides/1200px/user-wants-needs.png" alt="MuseMatch">
             </picture>
             <h3>User Personas</h3>
-            <div class="column col-md-6 col-lg-7">
+            <div class="row">
+            <div class="column col-lg-6">
                 <picture>
                     <source srcset="img/musematch-portfolio-slides/1200px/user-persona1.png" media="(min-width: 650px)">
                     <img src="img/musematch-portfolio-slides/1200px/user-persona1.png" alt="MuseMatch">
                 </picture>
             </div>
-            <div class="column col-md-6 col-lg-7">
+            <div class="column col-lg-6">
                 <picture>
                     <source srcset="img/musematch-portfolio-slides/1200px/user-persona2.png" media="(min-width: 650px)">
                     <img src="img/musematch-portfolio-slides/1200px/user-persona2.png" alt="MuseMatch">
                 </picture>
+            </div>
             </div>
             <h3>User Flow</h3>
             <ul>
@@ -300,6 +304,10 @@
                     <p>Copyright Arpine Azatyan 2025</p>
             </section>
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
