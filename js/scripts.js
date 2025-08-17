@@ -1,5 +1,3 @@
-alert("Hello");
-console.log("Hello, welcome to the portfolio site!");
 
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
