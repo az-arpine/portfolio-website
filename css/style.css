@@ -166,17 +166,17 @@ selector {
 }
 
 .container-hero {
-  background-color: #ffe4c4;
+  background-color: #dbe0f7;
   display: inline-block;
   width: 100%;
   text-align: center;
   margin: 0 auto; /* Centers the hero section */
-  padding-left: 15px; /* Adds padding to the left */
-  padding-right: 15px; /* Adds padding to the right */
+  padding-left: 25px; /* Adds padding to the left */
+  padding-right: 25px; /* Adds padding to the right */
 }
 
 .container-table-of-content {
-  background-color: #ffe4c4;
+  
   display: inline-block;
   width: 100%;
   align-content: center; /* Centers the content */
@@ -188,28 +188,32 @@ selector {
 
 
 header {
-  background-color: #ffe4c4;
-  opacity: 0.8;
-  padding: 10px 0;
+  background-color: #b8c2e9;
+  opacity: 100%; /* Sets the header opacity to 100% */
+  padding: 10px 0 4px;
   border-bottom: 3px solid #853455;
   position: fixed;
   width: 100%;
   box-shadow: 0 4px 20px rgba(0,0,0,0.25);
   z-index: 1000;
-  text-align: center;           /* center contents on mobile */
+  
 }
 
 .site-logo {
-  max-width: 250px;
+  max-width: 150px;
   margin-top: 4px; /* Stops auto-centering on desktop */;
 }
  
 nav {
     width: auto;
     margin-top: 4px;
-    text-align: center; /* Centers the navigation links */ 
     margin: 15px
   }
+  
+
+nav .icon i { 
+  font-size: 24px; color: #4873e3; 
+}
 
 .navigation a {
   text-transform: uppercase;
@@ -227,12 +231,8 @@ nav {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-
-nav > ul > li {
-  display: inline-block;
-}
-
 
 nav > ul > li > a {
   padding: 0 15px;
@@ -240,31 +240,29 @@ nav > ul > li > a {
   font-weight: 700;
   color:#4873e3;
 }
-
-
   nav > ul > li > a:hover {
     opacity: 0.8;
   }
 
    nav > ul > li > a:visited {
-  color:#163381;
+   color:#163381;
 }
 
+
 main {
-  padding: 133px 0 0; /* Adjusts for fixed header */
+  padding: 56px 0 0; /* Adjusts for fixed header */
 }
 #content {
-  background-color: #ffe4c4;
+  background-color: #dbe0f7;
   display: inline-block;
   width: 100%;
 }
 
 #about-me {
-  background-color: #ffe4c4;
+  background-color: #dbe0f7;
   display: inline-block;
   width: 100%;
 }
-
 
 
 .back-to-top {
@@ -354,6 +352,81 @@ footer {
   animation: cloud-move 34s linear infinite alternate;
 }
 
+.navtoggle li {
+  display: none;
+}
+.navtoggle li.icon {
+  display: inline-block;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li.icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  text-align: right; /* Aligns the text to the right */
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 2px solid rgba(84, 73, 182, 0.5);
+}
+
+.navtoggle.responsive li.icon  {
+  position: absolute;
+  padding: 0 0 10px;
+}
+.container-table-of-content ul {
+  list-style: none;          
+  padding-left: 1.25rem;     
+  margin: 0;
+}
+
+.container-table-of-content li {
+  margin-bottom: 10px;       /* <-- space between items */
+  line-height: 1.5;          /* nicer readability */
+}
+
+.container-table-of-content li a {
+  display: inline-block;     /* allows vertical padding on link */
+  padding: 2px 0;            /* tap-friendly spacing */
+}
+
+.container-table-of-content ul li {
+  border: 1px solid rgba(0, 0, 0, 0.1);   /* light gray border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  padding: 10px 15px;                     /* some breathing room */
+  margin-bottom: 10px;                    /* space between items */
+  border-radius: 6px;                     /* rounded corners for a softer look */
+  background-color: #e9edf7;                 /* keeps it clean */
+  transition: box-shadow 0.2s ease;       /* smooth hover effect */
+}
+
+.container-table-of-content ul li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* slightly stronger shadow on hover */
+}
+
+
+
+img.envelope-icon {
+  width: 32px; /* Sets a fixed width for the envelope icon */
+  height: 32px; /* Sets a fixed height for the envelope icon */
+  vertical-align: middle; /* Aligns the icon vertically with text */
+  color: #4873E3; /* Sets the color of the icon */
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -363,15 +436,17 @@ Medium devices (640px and larger)
  header {
     text-align: unset;
     padding: 20px 0 13px;
+    opacity: 100%; /* Sets the header opacity to 100% */
   }
 
   header .container-header {
     padding: 0 15px;
-    align-items: center; /* Vertically centers the items */
+    display: inline-block;
   }
   .site-logo {
-    margin-top: 4px;                  /* stop auto-centering on desktop */
+    margin-top: 15px;                  /* stop auto-centering on desktop */
     float: left;
+    max-width: 250px; /* Sets a maximum width for the logo */
   }
 
   nav {
@@ -379,7 +454,14 @@ Medium devices (640px and larger)
     margin-top: 4px;
     float: right; /* Centers the navigation links */ 
   }
-  
+  nav > ul > li {
+    display: inline-block; /* Displays navigation links inline */
+    margin-right: 20px; /* Adds space between navigation links */
+  }
+  nav > ul {
+  margin: 1em 0;
+  }
+
   main {
     padding-top: 125px; /* Adjusts for fixed header */
   }
@@ -410,11 +492,21 @@ Medium devices (640px and larger)
 .page.about-page main {
   margin-bottom: 40px;
 }
+
 .page.about-page h3 { margin-top: 0;}
+  
+
+.navtoggle li {
+  display: inline-block;
+}
+
+.navtoggle li.icon {
+  display: none;
+}
 
 }
 
-/* ==============================
+/* ==========================
 Large devices (1024px and larger)
 ================================= */
 @media only screen and (min-width: 1024px)
@@ -439,9 +531,6 @@ Large devices (1024px and larger)
     max-width: 50%;
   }
   
-
-
-
    
 .container {
   max-width: 1200px;
@@ -456,7 +545,6 @@ Large devices (1024px and larger)
 
 
   .site-logo {
-    margin: 0; /* Stops auto-centering on desktop */
     float: left; /* Floats the logo to the left */
   }
 
