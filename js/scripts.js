@@ -8,35 +8,29 @@ function menuToggle() {
   }
 }
 
-
-$(document).ready(function(){
-  // Select all links with hashes
+$(document).ready(function () {
   $('a[href*="#"]')
-    // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
-    .click(function(event) {
-      // On-page links
+    .on('click', function (event) {
+      // same-page link?
       if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname
+        location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
+        location.hostname === this.hostname
       ) {
-        // Figure out element to scroll to
-        var target = $(this.hash);
+        // element to scroll to
+        let target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        // Does a scroll target exist?
+
         if (target.length) {
-          // Only prevent default if animation is actually gonna happen
           event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 600); // 600ms = smooth speed
+
+          const headerHeight = $('header').outerHeight() || 0; // adjust for fixed header
+          $('html, body').animate(
+            { scrollTop: target.offset().top - headerHeight },
+            600
+          );
         }
       }
     });
 });
-
-$('html, body').animate({
-  scrollTop: target.offset().top - 80 // adjust "80" to your header height
-}, 600);
