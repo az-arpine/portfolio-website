@@ -182,6 +182,9 @@ selector {
 #hero h1 {
   text-align: center; /* Centers text */
 }
+#hero{
+  background-color: #dbe0f7;
+}
 
 .container-hero {
   background-color: #dbe0f7;
