@@ -414,45 +414,7 @@ ul.styleguide {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-.yerevan-illustration {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
-@keyframes cloud-move {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(200px);
-  }
-}
 
-@keyframes sun-glow {
-  0% {
-    fill: #edc655;
-  }
-  50% {
-    fill: #fcffad;
-  }
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun circle {
-  animation: sun-glow 4s linear infinite alternate;
-}
-
-.cloud-1,
-.cloud-2,
-.cloud-front {
-  animation: cloud-move 30s linear infinite alternate;
-}
-.cloud-back {
-  animation: cloud-move 34s linear infinite alternate;
-}
 
 
 .navtoggle li {
