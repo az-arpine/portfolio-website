@@ -28,7 +28,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-  <body id="home" class="page work-page">
+  <body id="home" class="page home-page">
     <header>
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
@@ -37,8 +37,9 @@
           /></a>
           <nav>
             <ul>
-              <li><a href="index.html">Work</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
+              <li><a href="#work"> My work</a></li>
               <li><a href="#contact">Contact</a></li>
               <li class="icon">
                 <a href="javascript:void(0);" onclick="menuToggle()"
@@ -54,31 +55,29 @@
       <div class="main">
         <section id="hero" class="container-hero">
           <h1>Welcome to my portfolio</h1>
-          <span>My name is Arpine Azatyan</span>
+          <div class="container">
           <p>
-            Hello, I am a musician and a UI/UX designer with love for beautiful
-            things that are functional and can make life simpler and more
-            delightful.
+            Hello, I am Arpine - a musician and a UI/UX designer with love for beautiful things that are functional  and can make life simpler and more delightful.
           </p>
+          </div>
         </section>
       </div>
-      <section class="work">
+      <section id="work" class="work">
         <div class="container">
           <div class="row">
-            <h1>My Projects</h1>
+            <h2>Featured Projects</h2>
             <p>
               Here are some of my recent projects that showcase my skills in
               UI/UX design and development.
             </p>
-            <h2>My Work</h2>
           </div>
           <div class="row">
             <!-- open row that holds (2) columns for project -->
             <div class="column col-md-6 col-lg-7">
               <!-- open first column (used for image) -->
               <picture>
-                <source media="(max-width: 767px)" srcset="img/MuseMatch.png" />
-                <img src="img/MuseMatch.png" alt="project1" />
+                <source media="(max-width: 767px)" srcset="img/musematch-portfolio-slides/1200px/hero.png" />
+                <img src="img/musematch-portfolio-slides/1200px/hero.png" alt="project1" />
               </picture>
             </div>
             <!-- end first column -->
@@ -126,6 +125,67 @@
             <!-- end second column -->
           </div>
           <!-- end row -->
+
+         <div class="row">
+            <!-- open row that holds (2) columns for project -->
+            <div class="column col-md-6 col-lg-7">
+              <!-- open first column (used for image) -->
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/SipandSavor/1200/Hero.png" />
+                <img src="img/SipandSavor/1200/Hero.png" alt="project3" />
+              </picture>
+            </div>
+            <!-- end first column -->
+            <div class="column col-md-6 col-lg-5-project-text">
+              <!-- open second column (used for text) -->
+              <h3 id="Sip and Savor">Sip and Savor</h3>
+              <p>
+                Sip and Savor is a responsive app designed to enhance the
+                culinary experience by helping users discover, save, and share
+                their favorite recipes and dining experiences.
+              </p>
+              <a href="project-sipandsavor.html" class="button"
+                >View Project<i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <!-- end second column -->
+          </div>
+          <!-- end row --> 
+           <div class="container">
+            <h2>Other Projects</h2>
+          </div>
+
+           <div class="carousel-container">
+            <div class="carousel-item">
+              <img src="/portfolio-site/img/Revivify/1200/Hero.png" alt="Project 1">
+              <h3>Revivify</h3>
+              <p>Revivify is a native app for discovering, buying, and selling vintage clothing with ease</p>
+            <a href="project-revivify.html" class="button"
+                >View Project<i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/Drafted/1200/Hero.png" alt="Project 2">
+              <h3>Drafted</h3>
+              <p>A minimalist app for fast, distraction-free notes</p>
+              <br>
+              <a href="project-drafted.html" class="button"
+                >View Project<i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="carousel-item">
+              <img src="/portfolio-site/img/viaEurasia/1200/Hero.png" alt="Project 3">
+              <h3>viaEurasia</h3>
+              <p>Redesigned for a smoother, more user-friendly travel experience</p>
+              <a href="project-viaEurasia.html" class="button"
+                >View Project<i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+
 
           <div class="row">
             <!-- open row that holds (2) columns for project -->
@@ -2490,9 +2550,8 @@
             <!-- end first column -->
             <div class="column col-md-6 col-lg-5">
               <!-- open second column (used for text) -->
-              <h3>CSS Animation</h3>
               <p>
-                CSS Animation is a project that showcases my skills in creating
+                This CSS Animation is a project that showcases my skills in creating
                 engaging and interactive animations using CSS.
               </p>
             </div>

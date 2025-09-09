@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon6_io/favicon-32x32.png" />
+    <title>Arpine Azatyan Portfolio</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body id="home" class="page work-page">
+    <header>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html"
+            ><img src="img/Logo-AA.svg" alt="Arpine Azatyan" class="site-logo"
+          /></a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="index.html#work"> My work</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="icon">
+                <a href="javascript:void(0);" onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="content" class="container-table-of-content">
+        <h2>Table of content</h2>
+        <div class="column col-md-6 col-lg-7">
+          <ul>
+            <li><a href="#project-overview">Overview</a></li>
+            <li><a href="#objective">Objective</a></li>
+            <li><a href="#problem">Problem Statement</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#styleguide">Styleguide</a></li>
+          </ul>
+        </div>
+        <div class="column col-md-6 col-lg-7">
+          <ul>
+            <li><a href="#user">User</a></li>
+            <li><a href="#user-flow-diagram">User Flow Diagram</a></li>
+            <li><a href="#revivify-final-UI">Revivify Final UI</a></li>
+            <li><a href="#reflections-and-next-steps">Reflections and Next Steps</a></li>
+            <li><a href="#prototype">Prototype</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="revivify" class="container">
+        <h1>Revivify</h1>
+        <picture>
+          <source
+            srcset="img/Revivify/1200/Hero.png"
+            media="(min-width: 650px)"
+          />
+          <img src="img/Revivify/1200/Hero.png" alt="Revivify" />
+        </picture>
+      </div>
+      <div id="project-overview" class="container">
+        <h2>Project Overview</h2>
+        <p>
+          Revivify is a native mobile app designed for vintage clothing enthusiasts who want    a faster, more curated way to buy and sell unique fashion pieces. Unlike general resale platforms, Revivify focuses specifically on vintage style, offering a clean, modern interface paired with features tailored to collectors and everyday shoppers alike.
+        </p>
+      </div>
+      <div id="objective" class="container">
+        <h2>Objective</h2>
+        <ul>
+          <li>Design the UI for the mobile version of a vintage clothing sales app</li>
+          <li>Come up with 2 to 3 key functionalities and design the UI for the mobile app.</li>
+        </ul>
+      </div>
+      <div id="problem" class="container">
+            <h2>Problem Statement</h2>
+            <p>Many vintage clothing buyers and sellers rely on cluttered platforms that lack focused tools and community features specific to vintage fashion.</p>
+            <p>Key Challenges:</p>
+            <ul>
+              <li>Difficult to filter by clothing type, size, or condition</li>
+              <li>Generic UI doesn't match aesthetic expectations of the vintage-loving audience</li>
+              <li>Uploading items feels cumbersome and inconsistent</li>
+            </ul>
+          </div>
+          <div id="solution" class="container">
+            <h2>Solution</h2>
+            <p>Design a mobile-first experience that:</p>
+            <ul>
+              <li>Makes listing items intuitive and fast</li>
+              <li>Emphasizes fashion-focused discovery (by style, color, era, etc.)</li>
+              <li>Builds community trust through reviews and profiles</li>
+              <li>Reflects a vintage-modern brand identity that resonates with fashion-conscious users</li>
+            </ul>
+              </div>
+      <div id="user" class="container">
+        <h2>User</h2>
+        <p>Users of Revivify are creative individuals who love fashion as a form of self-expression. They shop and sell clothing using mobile apps and values a smooth, stylish digital experience.</p>
+            <picture>
+            <source media="(max-width: 767px)" srcset="img/Revivify/1200/User Persona.png" />
+            <img src="img/Revivify/1200/User Persona.png" alt="User 1" />
+            </picture>
+        <div id="user-flow-diagram" class="container"></div>
+        <h3>User Flow Diagram</h3>
+        <p>This user flow outlines the core navigation structure of the app, starting from onboarding and leading into key actions like:</p>
+        <picture>
+            <ul>
+                <li>browsing items</li>
+                <li>listing products for sale</li>
+                <li>managing a profile</li>
+                <li>messaging</li>
+            </ul>
+            <p>The diagram illustrates a clear and intuitive path that supports both buyers and sellers through minimal steps and focused entry points.</p>
+          <source
+            srcset="img/Revivify/1200/User flow diagram.png"
+            media="(min-width: 650px)"
+          />
+          <img
+            src="img/Revivify/1200/User flow diagram.png"
+            alt="User Flow Diagram"
+          />
+        </picture>
+      </div>
+      <div id="styleguide" class="container">
+        <h2>Styleguide</h2>
+        <h3>Color</h3>
+        <picture>
+          <source
+            srcset="img/Revivify/1200/Color.png"
+            media="(min-width: 650px)"
+          />
+          <img
+            src="img/Revivify/1200/Color.png"
+            alt="Color Palette"
+          />
+        </picture>
+        <h3>Typography</h3>
+        <picture>
+          <source
+            srcset="img/Revivify/1200/Typography.png"
+            media="(min-width: 650px)"
+          />
+          <img
+            src="img/Revivify/1200/Typography.png"
+            alt="Main Navigation Card Imagery"
+          />
+        </picture>
+        <h3>Icons and Components</h3>
+        <picture>
+          <source
+            srcset="img/Revivify/1200/Components.png"
+            media="(min-width: 650px)"
+          />
+          <img
+            src="img/Revivify/1200/Components.png"
+            alt="Icons and Components"
+          />
+        </picture>
+        <br />
+      </div>
+      <div id="revivify-final-UI" class="container">
+        <h2>Revivify Final UI(Mobile)</h2>
+        <picture>
+          <source
+            srcset="img/Revivify/1200/Revivify wireframes.png"
+            media="(min-width: 650px)"
+          />
+          <img
+            src="img/Revivify/1200/Revivify wireframes.png"
+            alt="Final UI"
+          />
+        </picture>
+      </div>
+      <div id="reflections-and-next-steps" class="container">
+        <h2>Reflections and Next Steps</h2>
+        <ul>
+          <li>What worked: design system made iterations faster, icon set improved clarity</li>
+          <li>Next: usability testing with real sellers/buyers, add payments & shipping logic</li>
+        </ul>
+      </div>
+      <div id="prototype" class="container">
+        <h2>Prototype</h2>
+        <p>
+          Interact with the design — try the prototype:
+        </p>
+        <a
+          href="https://www.figma.com/proto/cfXYT7vpalqbnmHKCySn0U/Revivify?page-id=444%3A250&node-id=444-358&p=f&viewport=224%2C155%2C0.23&t=0HmucZOhhrKBhAHk-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=444%3A580"
+          target="_blank"
+          >View Prototype</a
+        >
+      </div>
+    </main>
+    <footer id="contact" class="site-footer">
+      <section class="contact-wrap" aria-labelledby="contact-title">
+        <h2 id="contact-title">Get in touch</h2>
+        <p class="contact-intro">
+          Have a project in mind or a question? Let's connect!
+        </p>
+
+        <p class="contact-primary">
+          <a
+            class="btn btn-email"
+            href="mailto:arpineazatyan@gmail.com?subject=Portfolio%20Inquiry"
+            aria-label="Email Arpine Azatyan"
+            ><img
+              src="img/envelope-icon.svg"
+              alt=""
+              class="icon-envelope"
+            />Email me</a
+          >
+          <span class="contact-alt"> or connect on: </span>
+        </p>
+
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.behance.net/arpineazatyan"
+              target="_blank"
+              rel="noopener"
+              aria-label="Behance – opens in a new tab"
+            >
+              <img
+                src="img/behance-logo-white.svg"
+                alt=""
+                class="icon"
+                width="28"
+                height="28"
+              />
+              <span class="sr-only">Behance</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/arpine-azatyan"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn – opens in a new tab"
+            >
+              <img
+                src="img/linkedin-logo.svg"
+                alt=""
+                class="icon"
+                width="28"
+                height="28"
+              />
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+        <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+        <p class="copyright">© Arpine Azatyan 2025</p>
+      </section>
+    </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

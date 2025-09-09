@@ -75,8 +75,11 @@ html {
 }
 
 a {
-  color: #474d69;
-  text-decoration: none; /* No underlining */
+  color: #574095;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 15px 0;   /* top & bottom padding */
+  display: inline-block; /* needed for vertical padding to take effect */
 }
 a:hover {
   opacity: 0.8; /* Makes the link slightly transparent when hovered */
@@ -85,7 +88,7 @@ a:hover {
 
 a:visited {
   /* visited link */
-  color: 163381; /* Dark Blue */
+  color: #292033; 
   text-decoration: none; /* No underlining */
 }
 
@@ -174,7 +177,7 @@ selector {
   padding: 0 15px;
 }
 
-#work .row {
+#home .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
@@ -190,7 +193,7 @@ selector {
   background-color: #dbe0f7;
   display: inline-block;
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin: 0 auto; /* Centers the hero section */
   padding-left: 15px; /* Adds padding to the left */
   padding-right: 15px; /* Adds padding to the right */
@@ -206,6 +209,44 @@ selector {
   padding-bottom: 40px; /* Adds padding to the bottom */
 }
 
+/* Reset link padding inside TOC */
+.container-table-of-content a { padding: 0 !important; }
+
+/* Compact li padding */
+.container-table-of-content ul li {
+  padding: 12px 8px !important;
+  margin-bottom: 8px;
+}
+
+.collapsible {
+  background-color: #4873E3;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.collapsible:hover {
+  background-color: #365ac0;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: #f9f9f9;
+  padding: 0 15px;
+  border-radius: 0 0 6px 6px;
+}
+
+
+.container-table-of-content ul {
+  padding-left: 20px;  /* indent neatly */
+}
 .container-footer {
   padding: 15px 15px;
 }
@@ -220,9 +261,31 @@ header {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   z-index: 1000;
 }
+.video-container {
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;      /* centers vertically (if you give the container height) */
+  margin: 20px auto;        /* adds space and auto-centers block */
+  max-width: 100%;          /* keep responsive */
+}
+
+.video-container video,
+.video-container iframe {
+  max-width: 300px;          /* scales down if screen is small */
+  height: auto;
+  border-radius: 8px;       /* optional: rounded corners */
+}
 
 .site-logo {
-  max-width: 150px;
+  width: 150px;    /* wrapper width */
+  flex: 0 0 auto;  /* prevent flex shrink */
+}
+.site-logo img {
+  width: 100%; 
+  height: auto;
+}
+.site-logo a {
+  padding: 0;
 }
 
 nav {
@@ -232,7 +295,10 @@ nav {
 nav .icon i {
   font-size: 24px;
   color: #474d69;
+  padding:25px 0;
+
 }
+
 
 .navigation a {
   text-transform: uppercase;
@@ -267,7 +333,7 @@ nav > ul > li > a:visited {
 }
 
 main {
-  padding: 78px 0 0; /* Adjusts for fixed header */
+  padding: 108px 0 0; /* Adjusts for fixed header */
 }
 #content {
   background-color: #dbe0f7;
@@ -316,6 +382,33 @@ ul.styleguide {
   height: auto;
   margin-top: 20px;
 }
+
+.carousel-container {
+  display: flex;
+  gap: 20px;                /* space between cards */
+  overflow-x: auto;         /* horizontal scroll */
+  scroll-snap-type: x mandatory;
+  padding: 10px;
+}
+
+.carousel-item {
+  flex: 0 0 300px;          /* fixed width for each item */
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -384,6 +477,7 @@ ul.styleguide {
 .cloud-back {
   animation: cloud-move 34s linear infinite alternate;
 }
+
 
 .navtoggle li {
   display: none;
@@ -649,8 +743,9 @@ Medium devices (640px and larger)
   .site-logo {
     /* stop auto-centering on desktop */
     float: left;
-    max-width: 250px; /* Sets a maximum width for the logo */
+    width: 250px; /* Sets a maximum width for the logo */
   }
+  
 
   nav {
     width: auto;
@@ -731,6 +826,7 @@ Medium devices (640px and larger)
   #about-me p {
     text-align: left;
   }
+ 
 
   /* ==========================
 Large devices (1024px and larger)
@@ -772,13 +868,43 @@ Large devices (1024px and larger)
 
     nav {
       float: right; /* Aligns navigation links to the right */
+      margin-left: 20px;
+    }
+    .navtoggle{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     nav > ul {
       display: flex;
       gap: 18px;
     }
+
+  .carousel-container {
+  display: flex;
+  gap: 38px;                /* space between cards */
+  overflow-x: auto;         /* horizontal scroll */
+  scroll-snap-type: x mandatory;
+  padding: 10px;
+}
+
+.carousel-item {
+  flex: 0 0 350px;          /* fixed width for each item */
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.video-container {
+    max-width: 360px;        /* optional cap */
+    height: auto !important; /* override any inline height */
   }
+}
+
+
 
   /* ==============================
 X-large devices (1440px or larger)
@@ -789,5 +915,5 @@ X-large devices (1440px or larger)
 Extra-large devices (1920px or larger)
 ================================= */
   @media only screen and (min-width: 1920px) {
-  }
+  } 
 }
