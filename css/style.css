@@ -882,17 +882,13 @@ Large devices (1024px and larger)
     height: auto !important; /* override any inline height */
   }
 
-  .column.col-md-6.col-lg-7 {
-  border: 2px solid #ccc;    /* light gray border */
-  border-radius: 8px;        /* optional rounded corners */
-  padding: 12px;             /* add space so border isn’t touching video */
-  box-sizing: border-box;    /* keep width consistent */
-}
-.container-table-of-content .column.col-md-6.col-lg-7 {
- border: none;
+#projects .column.col-md-6.col-lg-7 {
+  border: 2px solid #ccc;   /* light gray border */
+  border-radius: 8px;       /* rounded corners */
+  padding: 12px;            /* inner spacing so border isn't flush */
+  box-sizing: border-box;   /* keep widths consistent */
 }
 }
-
 
 
   /* ==============================
