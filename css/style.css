@@ -631,6 +631,20 @@ copyright,
   border: 0;
 }
 
+
+.video-responsive {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;  /* modern browsers */
+}
+
+.video-responsive video,
+.video-responsive iframe {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  display: block;
+}
+
 /* Small screens */
 @media (max-width: 640px) {
   .btn-email {
@@ -865,6 +879,16 @@ Large devices (1024px and larger)
     max-width: 360px;        /* optional cap */
     height: auto !important; /* override any inline height */
   }
+
+  .column.col-md-6.col-lg-7 {
+  border: 2px solid #ccc;    /* light gray border */
+  border-radius: 8px;        /* optional rounded corners */
+  padding: 12px;             /* add space so border isn’t touching video */
+  box-sizing: border-box;    /* keep width consistent */
+}
+.container-table-of-content .column.col-md-6.col-lg-7 {
+ border: none;
+}
 }
 
 
