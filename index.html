@@ -32,7 +32,7 @@
     <header>
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
-          <a href="index.html"
+          <a href="index.html" class="logo-link"
             ><img src="img/Logo-AA.svg" alt="Arpine Azatyan" class="site-logo"
           /></a>
           <nav>
@@ -113,10 +113,12 @@
             <!-- open row that holds (2) columns for project -->
             <div class="column col-md-6 col-lg-7">
               <!-- open first column (used for image) -->
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/SipandSavor/1200/Hero.png" />
-                <img src="img/SipandSavor/1200/Hero.png" alt="project3" />
-              </picture>
+              <div class="video-responsive">
+                <video controls autoplay muted loop>
+                  <source src="img/SipandSavor/SipandSavor-Hero.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+            </div>
             </div>
             <!-- end first column -->
             <div class="column col-md-6 col-lg-5-project-text">

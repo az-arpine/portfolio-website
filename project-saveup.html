@@ -28,7 +28,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-  <body id="home" class="page work-page">
+  <body id="page-saveup" class="projects">
     <header>
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
@@ -52,7 +52,7 @@
       </div>
     </header>
     <main>
-      <div id="content" class="container-table-of-content">
+      <!-- <div id="content" class="container-table-of-content">
         <h2>Table of content</h2>
         <div class="column col-md-6 col-lg-7">
           <ul>
@@ -75,27 +75,38 @@
             <li><a href="#prototype">Prototype</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <div id="saveup" class="container">
         <h1>SaveUp</h1>
-        <picture>
+        </div>
+      <div id="project-overview" class="row container">
+        <h2>Project Overview</h2>
+        
+          <div class="col-md-6 col-lg-7">
+            <!-- <picture>
           <source
             srcset="img/saveup-portfolio-slides/1200/Hero.png"
             media="(min-width: 650px)"
           />
           <img src="img/saveup-portfolio-slides/600/Hero.png" alt="SaveUp" />
-        </picture>
-      </div>
-      <div id="project-overview" class="container">
-        <h2>Project Overview</h2>
+        </picture> -->
+        <div class="video-responsive">
+                <video controls autoplay muted loop>
+                  <source src="img/saveup-portfolio-slides/Saveup-Hero.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-5">
         <p>
           SaveUp is a responsive financial app built to help users save money
           quickly and intentionally — for trips, weddings, major purchases, or
           debt reduction. It offers a clear dashboard, smart budgeting features,
           and personalized savings plans, all accessible across devices.
         </p>
-      </div>
-      <div id="my-role" class="container">
+        </div>
+        </div>
+      <div id="my-role" class="row container">
         <h2>My Role</h2>
         <p>I led the end-to-end product design for SaveUp — from</p>
         <ul>
@@ -110,7 +121,7 @@
           money feel easy, approachable, and rewarding.
         </p>
       </div>
-      <div id="wireframing" class="container">
+      <div id="wireframing" class="row container">
         <h2>Wireframing</h2>
         <ul>
           <li>
@@ -124,10 +135,12 @@
           <li>terative refinements driven by user feedback across devices.</li>
         </ul>
       </div>
-      <div id="problem" class="container">
-        <div class="row">
+      <div id="problem-and-solution" class="row container">
           <div class="col-md-6 col-lg-7">
-            <h2>Problem</h2>
+              <h2>Problem</h2>
+              <p>
+                Many people struggle to save money effectively because:
+              </p>
             <ul>
               <li>
                 Users often feel overwhelmed by managing personal finances.
@@ -147,9 +160,7 @@
                 essential.
               </li>
             </ul>
-          </div>
-
-          <div id="solution" class="container">
+            </div>
             <div class="col-md-6 col-lg-7">
               <h2>Solution</h2>
               <p>
@@ -166,18 +177,20 @@
               </ul>
             </div>
           </div>
-        </div>
-      </div>
+      
 
-      <div id="user" class="container">
+      <div id="user" class="row container">
         <h2>User</h2>
-        <p>
-          Tech-savvy professionals (25–45) saving for meaningful goals—seeking a
-          smart, intuitive tool that fits their busy lives. They want visual,
-          motivating insights without the hassle of spreadsheets—anytime, on any
+        <h3>User Persona</h3>
+        <div class="col-md-6 col-lg-7">
+          <p>
+            Tech-savvy professionals (25–45) saving for meaningful goals—seeking a
+            smart, intuitive tool that fits their busy lives. They want visual,
+            motivating insights without the hassle of spreadsheets—anytime, on any
           device.
         </p>
-        <h3>User Persona</h3>
+        </div>
+        <div class="col-md-6 col-lg-5">
         <picture>
           <source
             srcset="img/saveup-portfolio-slides/1200/User.png"
@@ -188,7 +201,11 @@
             alt="SaveUp User Persona"
           />
         </picture>
+        </div>
+      </div>
+      <div class="row container">
         <h3>User Flow Diagram</h3>
+        <div class="col-md-6 col-lg-7">
         <ul>
           <li>
             I need to be able to input information on the money I am receiving
@@ -209,6 +226,8 @@
           </li>
           <li>I need to set goals with deadlines and stay on track.</li>
         </ul>
+        </div>
+        <div class="col-md-6 col-lg-5">
         <picture>
           <source
             srcset="img/saveup-portfolio-slides/1200/User-flow-diagram.png"
@@ -220,9 +239,12 @@
           />
         </picture>
       </div>
-      <div id="styleguide" class="container">
+      </div>
+    
+      <div id="styleguide" class="row container">
         <h2>Styleguide</h2>
-        <h3>Color</h3>
+        <div class="col-md-6 col-lg-7">
+          <h3>Color</h3>
         <picture>
           <source
             srcset="img/saveup-portfolio-slides/1200/Color.png"
@@ -233,6 +255,8 @@
             alt="Color Palette"
           />
         </picture>
+        </div>
+        <div class="col-md-6 col-lg-5">
         <h3>Typography</h3>
         <picture>
           <source
@@ -244,7 +268,12 @@
             alt="Main Navigation Card Imagery"
           />
         </picture>
+        </div>
+      </div>
+      <div class="row container">
         <h3>Logo</h3>
+        <div class="col-md-6 col-lg-7">
+        <!-- <h3>Logo</h3> -->
         <p>
           The SaveUp logo is designed for flexibility and clarity across
           contexts. It works effectively on both light and dark backgrounds. On
@@ -254,6 +283,8 @@
           without a background shape such as a circle, square, or badge—for
           brand consistency at any scale.
         </p>
+        </div>
+        <div class="col-md-6 col-lg-5">
         <picture>
           <source
             srcset="img/saveup-portfolio-slides/1200/Logo.png"
@@ -261,7 +292,12 @@
           />
           <img src="img/saveup-portfolio-slides/600/Logo.png" alt="Logo" />
         </picture>
+        </div>
+      </div>
+      <div class="row container">
         <h3>Component Examples</h3>
+        <div class="col-md-6 col-lg-7">
+        <!-- <h3>Component Examples</h3> -->
         <picture>
           <source
             srcset="img/saveup-portfolio-slides/1200/Components.png"
@@ -272,7 +308,7 @@
             alt="Component Examples"
           />
         </picture>
-        <br />
+        </div>
         <!-- Remember to add google sheet link for the see more:Added-->
         <a
           href="https://drive.google.com/file/d/1cKjOtFU4XUMDJatqD5z_qm3hc3Z0dMVS/view?usp=sharing"
@@ -286,18 +322,24 @@
           >Explore the Styleguide for Consistent Branding
         </a>
       </div>
-      <div id="design-evolution" class="container">
+
+      <div id="design-evolution" class="row container">
         <h2>Design Evolution</h2>
-        <picture>
-          <source
-            srcset="img/saveup-portfolio-slides/1200/Low-fidelity.png"
-            media="(min-width: 650px)"
-          />
+        <div class="col-md-6 col-lg-7">
+          <h3>Low-Fidelity Wireframes</h3>
+          <picture>
+            <source
+              srcset="img/saveup-portfolio-slides/1200/Low-fidelity.png"
+              media="(min-width: 650px)"
+            />
           <img
             src="img/saveup-portfolio-slides/600/Low-fidelity.png"
             alt="Low-fidelity wireframes"
           />
         </picture>
+        </div>
+        <div class="col-md-6 col-lg-5">
+          <h3>Mid-Fidelity Wireframes</h3>
         <picture>
           <source
             srcset="img/saveup-portfolio-slides/1200/mid-fidelity.png"
@@ -309,7 +351,9 @@
           />
         </picture>
       </div>
-      <div id="testing" class="container">
+      </div>
+    
+      <div id="testing" class="row container">
         <h2>Testing</h2>
         <p>User testing scenario:</p>
         <p>
@@ -347,7 +391,8 @@
           </li>
         </ul>
       </div>
-      <div id="saveup-screens" class="container">
+
+      <div id="saveup-screens" class="row container">
         <h2>SaveUp Screens</h2>
         <picture>
           <source
@@ -360,7 +405,8 @@
           />
         </picture>
       </div>
-      <div id="reflections" class="container">
+      <div id="reflections" class="row container">
+        <div class="col-md-6 col-lg-7">
         <h2>Reflections</h2>
         <ul>
           <li>
@@ -377,7 +423,7 @@
           </li>
         </ul>
       </div>
-      <div id="next-steps" class="container">
+      <div class="col-md-6 col-lg-5">
         <h2>Next Steps</h2>
         <ul>
           <li>
@@ -396,6 +442,9 @@
             ensure consistent responsiveness across platforms.
           </li>
         </ul>
+      </div>
+      </div>
+      <div class="row container">
         <picture>
           <source
             srcset="img/saveup-portfolio-slides/1200/mockup.png"
@@ -407,7 +456,7 @@
           />
         </picture>
       </div>
-      <div id="prototype" class="container">
+      <div id="prototype" class="row container">
         <h2>Prototype</h2>
         <p>
           Curious how it all comes together? Explore the interactive prototype :

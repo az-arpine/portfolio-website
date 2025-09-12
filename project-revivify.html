@@ -28,7 +28,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-  <body id="home" class="page work-page">
+  <body id="page-revivify" class="projects">
     <header>
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
@@ -52,7 +52,7 @@
       </div>
     </header>
     <main>
-      <div id="content" class="container-table-of-content">
+      <!-- <div id="content" class="container-table-of-content">
         <h2>Table of content</h2>
         <div class="column col-md-6 col-lg-7">
           <ul>
@@ -72,9 +72,13 @@
             <li><a href="#prototype">Prototype</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <div id="revivify" class="container">
         <h1>Revivify</h1>
+      </div>
+      <div class="row container">
+        <h2>Project Overview</h2>
+        <div class="column col-md-6 col-lg-7">
         <picture>
           <source
             srcset="img/Revivify/1200/Hero.png"
@@ -83,20 +87,22 @@
           <img src="img/Revivify/1200/Hero.png" alt="Revivify" />
         </picture>
       </div>
-      <div id="project-overview" class="container">
-        <h2>Project Overview</h2>
+      <div class="column col-md-6 col-lg-7">
         <p>
           Revivify is a native mobile app designed for vintage clothing enthusiasts who want    a faster, more curated way to buy and sell unique fashion pieces. Unlike general resale platforms, Revivify focuses specifically on vintage style, offering a clean, modern interface paired with features tailored to collectors and everyday shoppers alike.
         </p>
       </div>
-      <div id="objective" class="container">
+    </div>
+  
+      <div id="objective" class="row container">
         <h2>Objective</h2>
         <ul>
           <li>Design the UI for the mobile version of a vintage clothing sales app</li>
           <li>Come up with 2 to 3 key functionalities and design the UI for the mobile app.</li>
         </ul>
       </div>
-      <div id="problem" class="container">
+      <div id="problem" class="row container">
+          <div class="column col-md-6 col-lg-7">
             <h2>Problem Statement</h2>
             <p>Many vintage clothing buyers and sellers rely on cluttered platforms that lack focused tools and community features specific to vintage fashion.</p>
             <p>Key Challenges:</p>
@@ -107,7 +113,8 @@
             </ul>
           </div>
           <div id="solution" class="container">
-            <h2>Solution</h2>
+          <div class="column col-md-6 col-lg-7">
+             <h2>Solution</h2>
             <p>Design a mobile-first experience that:</p>
             <ul>
               <li>Makes listing items intuitive and fast</li>
@@ -116,17 +123,25 @@
               <li>Reflects a vintage-modern brand identity that resonates with fashion-conscious users</li>
             </ul>
               </div>
-      <div id="user" class="container">
+          </div>
+      </div>
+      <div id="user" class="row container">
         <h2>User</h2>
-        <p>Users of Revivify are creative individuals who love fashion as a form of self-expression. They shop and sell clothing using mobile apps and values a smooth, stylish digital experience.</p>
-            <picture>
+        <div class="column col-md-6 col-lg-7">
+          <p>Users of Revivify are creative individuals who love fashion as a form of self-expression. They shop and sell clothing using mobile apps and values a smooth, stylish digital experience.</p>
+        </div>  
+        <div class="column col-md-6 col-lg-7">
+        <picture>
             <source media="(max-width: 767px)" srcset="img/Revivify/1200/User Persona.png" />
             <img src="img/Revivify/1200/User Persona.png" alt="User 1" />
             </picture>
-        <div id="user-flow-diagram" class="container"></div>
+        </div>
+      </div>
+
+        <div id="user-flow-diagram" class="row container">
         <h3>User Flow Diagram</h3>
+        <div class="column col-md-6 col-lg-7">
         <p>This user flow outlines the core navigation structure of the app, starting from onboarding and leading into key actions like:</p>
-        <picture>
             <ul>
                 <li>browsing items</li>
                 <li>listing products for sale</li>
@@ -134,19 +149,25 @@
                 <li>messaging</li>
             </ul>
             <p>The diagram illustrates a clear and intuitive path that supports both buyers and sellers through minimal steps and focused entry points.</p>
-          <source
-            srcset="img/Revivify/1200/User flow diagram.png"
-            media="(min-width: 650px)"
-          />
-          <img
-            src="img/Revivify/1200/User flow diagram.png"
-            alt="User Flow Diagram"
-          />
-        </picture>
+          </div>
+            <div class="column col-md-6 col-lg-7">
+            <picture>
+              <source
+              srcset="img/Revivify/1200/User flow diagram.png"
+              media="(min-width: 650px)"
+            />
+            <img
+              src="img/Revivify/1200/User flow diagram.png"
+              alt="User Flow Diagram"
+            />
+          </picture>
+        </div>
       </div>
-      <div id="styleguide" class="container">
+
+      <div id="styleguide" class="row container">
         <h2>Styleguide</h2>
-        <h3>Color</h3>
+        <div class="column col-md-6 col-lg-7">
+            <h3>Color</h3>
         <picture>
           <source
             srcset="img/Revivify/1200/Color.png"
@@ -157,6 +178,8 @@
             alt="Color Palette"
           />
         </picture>
+        </div>
+        <div class="column col-md-6 col-lg-7">
         <h3>Typography</h3>
         <picture>
           <source
@@ -168,6 +191,9 @@
             alt="Main Navigation Card Imagery"
           />
         </picture>
+        </div>
+        </div>
+        <div class="row container">
         <h3>Icons and Components</h3>
         <picture>
           <source
@@ -179,9 +205,8 @@
             alt="Icons and Components"
           />
         </picture>
-        <br />
       </div>
-      <div id="revivify-final-UI" class="container">
+      <div id="revivify-final-UI" class="row container">
         <h2>Revivify Final UI(Mobile)</h2>
         <picture>
           <source
@@ -194,14 +219,14 @@
           />
         </picture>
       </div>
-      <div id="reflections-and-next-steps" class="container">
+      <div id="reflections-and-next-steps" class="row container">
         <h2>Reflections and Next Steps</h2>
         <ul>
           <li>What worked: design system made iterations faster, icon set improved clarity</li>
           <li>Next: usability testing with real sellers/buyers, add payments & shipping logic</li>
         </ul>
       </div>
-      <div id="prototype" class="container">
+      <div id="prototype" class="row container">
         <h2>Prototype</h2>
         <p>
           Interact with the design — try the prototype:

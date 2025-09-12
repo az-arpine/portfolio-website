@@ -28,7 +28,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-  <body id="home" class="page work-page">
+  <body id="page-musematch" class="projects">
     <header>
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
@@ -52,89 +52,106 @@
       </div>
     </header>
     <main>
-      <div id="content" class="container-table-of-content">
+      <!-- <div id="content" class="container-table-of-content">
         <h2>Table of content</h2>
-        <div class="column col-md-6 col-lg-7">
-          <ul>
-            <li><a href="#project-overview">Project Overview</a></li>
-            <li><a href="#my-role">My Role</a></li>
-            <li><a href="#hypothesis">Hypothesis</a></li>
+          <div class="column col-md-6 col-lg-7">
+            <ul>
+              <li><a href="#project-overview">Project Overview</a></li>
+              <li><a href="#my-role">My Role</a></li>
+              <li><a href="#hypothesis">Hypothesis</a></li>
             <li><a href="#problem">Problem</a></li>
             <li><a href="#solution">Solution</a></li>
             <li><a href="#user">User</a></li>
           </ul>
         </div>
-        <div class="column col-md-6 col-lg-7">
-          <ul>
-            <li><a href="#styleguide">Styleguide</a></li>
-            <li><a href="#design-evolution">Design Evolution</a></li>
-            <li><a href="#musematch-screens">MuseMatch Screens</a></li>
+          <div class="column col-md-6 col-lg-7">
+            <ul>
+              <li><a href="#styleguide">Styleguide</a></li>
+              <li><a href="#design-evolution">Design Evolution</a></li>
+              <li><a href="#musematch-screens">MuseMatch Screens</a></li>
             <li><a href="#takeaways">Takeaways</a></li>
             <li><a href="#next-steps">Next Steps</a></li>
             <li><a href="#prototype">Prototype</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <div id="musematch" class="container">
-        <h1>MuseMatch</h1>
-        <picture>
-          <source
-            srcset="img/musematch-portfolio-slides/1200px/hero.png"
-            media="(min-width: 650px)"
-          />
-          <img
-            src="img/musematch-portfolio-slides/1200px/hero.png"
-            alt="MuseMatch"
-          />
-        </picture>
+       <h1>MuseMatch</h1>
       </div>
-      <div id="project-overview" class="container">
-        <h2>Project Overview</h2>
+      <div id="project-overview" class="row container">
+      <h2>Project Overview</h2>  
+      <div class="column col-md-6 col-lg-7" style="padding-top: 20px;">
+        <!-- <picture>
+         <source
+          srcset="img/musematch-portfolio-slides/1200px/hero.png"
+            media="(min-width: 650px)"
+            />
+           <img
+          src="img/musematch-portfolio-slides/1200px/hero.png"
+             alt="MuseMatch"
+            />
+        </picture> -->
+        <div class="video-responsive">
+          <video controls autoplay muted loop>
+            <source src="img/musematch-portfolio-slides/MuseMatch-Hero.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="column col-md-6 col-lg-7"> 
         <p>
-          MuseMatch is a native app that offers space where connection feels
-          easy, and creativity gathers momentum through real conversation.
-          Artists don’t just need exposure — they need meaningful relationships
-          that supports their creativity. MuseMatch makes those connections
-          possible, because the next great project often starts with the right
-          introduction.
+        MuseMatch is a native app that offers space where connection feels
+        easy, and creativity gathers momentum through real conversation.
+        Artists don’t just need exposure — they need meaningful relationships
+        that support their creativity. MuseMatch makes those connections
+        possible, because the next great project often starts with the right
+        introduction.
         </p>
       </div>
-      <div id="my-role" class="container">
+      </div>
+
+      <div id="my-role" class="row container">
         <h2>My Role</h2>
         <p>I led the end-to-end product design for MuseMatch — from</p>
         <ul>
           <li>concept to user research</li>
-          <li>flow mapping to wireframes</li>
-          <li>visual design</li>
-          <li>interactive prototyping</li>
-        </ul>
-        <p>
-          I focused on creating a user-centered experience that blends artistic
-          personality with intuitive functionality.
-        </p>
+        <li>flow mapping to wireframes</li>
+        <li>visual design</li>
+        <li>interactive prototyping</li>
+      </ul>
+      <p>
+        I focused on creating a user-centered experience that blends artistic
+        personality with intuitive functionality.
+      </p>
       </div>
-      <div id="hypothesis" class="container">
+
+      <div id="hypothesis" class=" row container">
         <h2>Hypothesis</h2>
+      <div class="column col-md-6 col-lg-7">
         <p>
           By creating a platform with a clear purpose and guiding users through
           a personalized onboarding flow, creative individuals will be more
           likely to form meaningful, aligned connections — leading to greater
           engagement, creative momentum, and a stronger sense of community.
         </p>
+        </div>
+        <div class="column col-md-6 col-lg-7" style="padding-top: 20px;">
         <picture>
           <source
             srcset="img/musematch-portfolio-slides/1200px/design-thinking.png"
             media="(min-width: 650px)"
           />
           <img
-            src="img/musematch-portfolio-slides/1200px/design-thinking.png"
+            src="img/musematch-portfolio-slides/600px/design-thinking.png"
             alt="MuseMatch"
           />
         </picture>
       </div>
-      <div id="problem" class="container">
-        <div class="column col-md-6 col-lg-7">
-          <h2>Problem</h2>
+      </div>
+      
+      <div id="problem and solution" class=" row container">
+      <div class="column col-md-6 col-lg-7">
+        <h3>Problem</h3>
           <p>
             In the creative world, talent alone isn’t enough — finding the right
             people to collaborate with, learn from, or gain support from is
@@ -151,8 +168,6 @@
             <li>Without that, many feel isolated, stuck, or unsupported.</li>
           </ul>
         </div>
-      </div>
-      <div id="solution" class="container">
         <div class="column col-md-6 col-lg-7">
           <h2>Solution</h2>
           <p>
@@ -175,26 +190,32 @@
           </ul>
         </div>
       </div>
-      <div id="user" class="container">
+
+      <div id="user" class="row container">
         <h2>User</h2>
+      <div class="column col-md-6 col-lg-7">
         <p>
           MuseMatch is for creatives 16 and up — from newcomers to seasoned
           pros. It’s a space to find collaborators, mentors, or supporters, and
           for anyone who believes great things happen when creative minds
           connect.
         </p>
+        </div>
+        <div class="column col-md-6 col-lg-7" style="padding-top: 20px;">
         <picture>
           <source
             srcset="img/musematch-portfolio-slides/1200px/user-wants-needs.png"
             media="(min-width: 650px)"
           />
           <img
-            src="img/musematch-portfolio-slides/1200px/user-wants-needs.png"
+            src="img/musematch-portfolio-slides/600px/user-wants-needs.png"
             alt="MuseMatch"
           />
         </picture>
+      </div>
+      </div>
+      <div id="user-personas" class="row container">
         <h3>User Personas</h3>
-        <div class="row">
           <div class="column col-lg-6">
             <picture>
               <source
@@ -214,13 +235,16 @@
                 media="(min-width: 650px)"
               />
               <img
-                src="img/musematch-portfolio-slides/1200px/user-persona2.png"
+                src="img/musematch-portfolio-slides/600px/user-persona2.png"
                 alt="MuseMatch"
               />
             </picture>
           </div>
         </div>
-        <h3>User Flow</h3>
+       
+      <div id="user-flow" class="row container">
+      <div class="column col-md-6 col-lg-7">
+        <h2>User Flow</h2>
         <ul>
           <li>
             Users start by selecting a creative goal: collaboration, mentorship,
@@ -239,25 +263,28 @@
           </li>
           <li>The experience is intuitive, flexible, and user-centered.</li>
         </ul>
-        <h3>User Flow Diagram</h3>
+      </div>
+      <div class="column col-md-6 col-lg-7">
+        <h2>User Flow Diagram</h2>
         <picture>
           <source
             srcset="img/musematch-portfolio-slides/1200px/user-flow-diagram.png"
             media="(min-width: 650px)"
           />
           <img
-            src="img/musematch-portfolio-slides/1200px/user-flow-diagram.png"
+            src="img/musematch-portfolio-slides/600px/user-flow-diagram.png"
             alt="User Flow Diagram"
           />
         </picture>
       </div>
-      <div id="styleguide" class="container">
+      </div>
+      <div id="styleguide" class="row container">
         <h2>Styleguide</h2>
-        <div class="row">
           <!-- open row that holds (2) columns for project -->
+          <div class="container">
           <div class="column col-md-6 col-lg-5">
-            <!-- open second column (used for text) -->
             <h3>The Visual Mark</h3>
+            <!-- open second column (used for text) -->
             <p>
               anchors the platform’s identity around creativity and connection.
               It serves as a symbol of the platform’s mission to help artists
@@ -265,12 +292,12 @@
               user-centered experiences.
             </p>
           </div>
-          <div class="column col-md-6 col-lg-7">
+          <div class="column col-md-6 col-lg-7" style="padding-top: 20px;">
             <!-- open first column (used for image) -->
             <picture>
               <source
                 srcset="
-                  img/musematch-portfolio-slides/600px/main-visual-mark.png
+                  img/musematch-portfolio-slides/1200px/main-visual-mark.png
                 "
                 media="(min-width: 650px)"
               />
@@ -282,12 +309,11 @@
           </div>
           <!-- close first column -->
         </div>
+        </div>
         <!-- close row -->
-        <div class="row">
-          <!-- open row that holds (2) columns for project -->
+         <div class="row container">
+         <h3>Main Navigation Card Imagery</h3>
           <div class="column col-md-6 col-lg-5">
-            <!-- open second column (used for text) -->
-            <h3>Main Navigation Card Imagery</h3>
             <p>
               Stunning, symbolic visuals are layered behind each navigation
               card—adding mood, texture, and a sense of atmosphere without
@@ -297,11 +323,11 @@
               clarity and emotional tone that elevates the overall experience.
             </p>
           </div>
-          <div class="column col-md-6 col-lg-7">
+          <div class="column col-md-6 col-lg-7" style ="padding-top: 20px;">
             <!-- open first column (used for image) -->
             <picture>
               <source
-                srcset="img/musematch-portfolio-slides/600px/imagery2.png"
+                srcset="img/musematch-portfolio-slides/1200px/imagery2.png"
                 media="(min-width: 650px)"
               />
               <img
@@ -311,7 +337,7 @@
             </picture>
             <picture>
               <source
-                srcset="img/musematch-portfolio-slides/600px/imagery1.png"
+                srcset="img/musematch-portfolio-slides/1200px/imagery1.png"
                 media="(min-width: 650px)"
               />
               <img
@@ -320,20 +346,22 @@
               />
             </picture>
           </div>
-          <!-- close first column -->
         </div>
-        <!-- close row -->
+        <div class="row container">
+      <div class="column col-md-6 col-lg-7">
         <h3>Color</h3>
-        <picture>
-          <source
-            srcset="img/musematch-portfolio-slides/1200px/Color.png"
-            media="(min-width: 650px)"
-          />
+          <picture>
+            <source
+              srcset="img/musematch-portfolio-slides/1200px/Color.png"
+              media="(min-width: 650px)"
+            />
           <img
-            src="img/musematch-portfolio-slides/1200px/Color.png"
-            alt="Main Navigation Card Imagery"
+            src="img/musematch-portfolio-slides/600px/Color.png"
+            alt="Color"
           />
         </picture>
+        </div>
+       <div class="column col-md-6 col-lg-7">
         <h3>Typography</h3>
         <picture>
           <source
@@ -341,18 +369,22 @@
             media="(min-width: 650px)"
           />
           <img
-            src="img/musematch-portfolio-slides/1200px/typography.png"
+            src="img/musematch-portfolio-slides/600px/typography.png"
             alt="Main Navigation Card Imagery"
-          />
-        </picture>
+            />
+          </picture>
+          </div>
+          </div>
+        <div class=" row container">
         <h3>Component Examples</h3>
+      <div class="column col-md-6 col-lg-7">
         <picture>
           <source
             srcset="img/musematch-portfolio-slides/1200px/navigation.png"
             media="(min-width: 650px)"
           />
           <img
-            src="img/musematch-portfolio-slides/1200px/navigation.png"
+            src="img/musematch-portfolio-slides/600px/navigation.png"
             alt="Navigation"
           />
         </picture>
@@ -362,27 +394,28 @@
             media="(min-width: 650px)"
           />
           <img
-            src="img/musematch-portfolio-slides/1200px/icons.png"
+            src="img/musematch-portfolio-slides/600px/icons.png"
             alt="Icons"
           />
         </picture>
-        <br />
-        <!-- Remember to add google sheet link for the see more: added-->
-        <a
-          href="https://drive.google.com/file/d/1IWbX_Xj7PHRpUSxtCtX78D-enth924vY/view?usp=sharing"
-          target="_blank"
-          >Explore the full components design</a
-        >
+        </div>
+        <div class="column col-md-6 col-lg-7">
+          <!-- Remember to add google sheet link for the see more: added-->
+          <a
+            href="https://drive.google.com/file/d/1IWbX_Xj7PHRpUSxtCtX78D-enth924vY/view?usp=sharing"
+            target="_blank"
+            >Explore the full components design</a
+          >
+        </div>
       </div>
-      <div id="design-evolution" class="container">
+      <div id="design-evolution" class="row container">
         <h2>Design Evolution</h2>
         <p>
           Throughout the design process I conducted multiple rounds of informal
           usability testing with 7 users from various backgrounds.
         </p>
-        <div class="row">
           <div class="column col-md-6 col-lg-7">
-            <h3>Focus areas</h3>
+            <h4>Focus areas</h4>
             <ul>
               <li>User flow clarity</li>
               <li>Visual consistency</li>
@@ -392,17 +425,17 @@
             </ul>
           </div>
           <div class="column col-md-6 col-lg-5">
-            <h3>Feedback gathered through</h3>
+            <h4>Feedback gathered through</h4>
             <ul>
               <li>Walkthroughs</li>
               <li>Prototype interactions</li>
               <li>Follow-up conversations for qualitative insights</li>
             </ul>
           </div>
-        </div>
-        <div class="row">
+          </div>
+          <div class="row container">
           <div class="column col-md-6 col-lg-7">
-            <h3>What Worked</h3>
+            <h4>What Worked</h4>
             <ul>
               <li>Clear and thematic visual design</li>
               <li>Smooth onboarding and single sign-in options</li>
@@ -412,7 +445,7 @@
             </ul>
           </div>
           <div class="column col-md-6 col-lg-7">
-            <h3>What needed to Improve?</h3>
+            <h4>What needed to Improve?</h4>
             <ul>
               <li>All AI chat paths lead to the same generic screen</li>
               <li>
@@ -435,9 +468,8 @@
               </li>
             </ul>
           </div>
-        </div>
       </div>
-      <div id="musematch-screens" class="container">
+      <div id="musematch-screens" class="row container">
         <h2>MuseMatch Screens</h2>
         <picture>
           <source
@@ -449,15 +481,14 @@
             alt="Final Screens"
           />
         </picture>
-        <br />
-        <!-- Remember to add google sheet link for the see more-->
-        <a
-          href="https://www.figma.com/proto/VSZyZWT5I82Ntm37fgRejB/Muse-Match-Android--Version?page-id=27%3A10001&node-id=29-8308&p=f&viewport=430%2C45%2C0.05&t=Tp38R8nmRmboCNpd-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=29%3A8347"
-          target="_blank"
-          >See all the screens</a
-        >
-      </div>
-      <div id="takeaways" class="container">
+          <a
+            href="https://www.figma.com/proto/VSZyZWT5I82Ntm37fgRejB/Muse-Match-Android--Version?page-id=27%3A10001&node-id=29-8308&p=f&viewport=430%2C45%2C0.05&t=Tp38R8nmRmboCNpd-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=29%3A8347"
+            target="_blank"
+            >See all the screens</a
+          >
+        </div>
+      <div id="takeaways-and-next-steps" class="row container">
+      <div class="column col-md-6 col-lg-7">
         <h2>Takeaways</h2>
         <ul>
           <li>
@@ -489,18 +520,8 @@
             experience.
           </li>
         </ul>
-        <picture>
-          <source
-            srcset="img/musematch-portfolio-slides/1200px/photos.png"
-            media="(min-width: 650px)"
-          />
-          <img
-            src="img/musematch-portfolio-slides//600px//photos.png"
-            alt="Takeaways"
-          />
-        </picture>
-      </div>
-      <div id="next-steps" class="container">
+        </div>
+        <div class="column col-md-6 col-lg-7">
         <h2>Next Steps</h2>
         <ul>
           <li>
@@ -518,9 +539,22 @@
             collaboration boards, sponsorship matching filters, AI
             personalization settings
           </li>
-        </ul>
+        </ul> 
+        </div>
+        </div>
+        <div class="row container">
+        <picture>
+          <source
+            srcset="img/musematch-portfolio-slides/1200px/photos.png"
+            media="(min-width: 650px)"
+          />
+          <img
+            src="img/musematch-portfolio-slides//600px//photos.png"
+            alt="Takeaways"
+          />
+        </picture>
       </div>
-      <div id="prototype" class="container">
+      <div id="prototype" class="row container">
         <h2>Prototype</h2>
         <p>
           Explore the interactive prototype to experience the MuseMatch flow
@@ -596,6 +630,7 @@
         <p class="copyright">© Arpine Azatyan 2025</p>
       </section>
     </footer>
+
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>

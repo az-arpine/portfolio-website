@@ -28,7 +28,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-  <body id="home" class="page work-page">
+  <body id="page-sipandsavor" class="projects">
     <header>
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
@@ -52,7 +52,7 @@
       </div>
     </header>
     <main>
-      <div id="content" class="container-table-of-content">
+      <!-- <div id="content" class="container-table-of-content">
         <h2>Table of content</h2>
         <div class="column col-md-6 col-lg-7">
           <ul>
@@ -75,28 +75,39 @@
             <li><a href="#prototype">Prototype</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <div id="sipandsavor" class="container">
         <h1>Sip and Savor</h1>
-        <picture>
-          <source
-            srcset="img/SipandSavor/1200/Hero.png"
-            media="(min-width: 650px)"
-          />
-          <img src="img/SipandSavor/1200/Hero.png" alt="Sip and Savor" />
-        </picture>
       </div>
-      <div id="project-overview" class="container">
+      <div id="project-overview" class="row container">
         <h2>Project Overview</h2>
+        <div class="column col-md-6 col-lg-5" style="padding-top: 30px;">
+          <!-- <picture>
+            <source
+              srcset="img/SipandSavor/1200/Hero.png"
+              media="(min-width: 650px)"
+            />
+          <img src="img/SipandSavor/1200/Hero.png" alt="Sip and Savor" />
+        </picture> -->
+        <div class="video-responsive">
+          <video controls autoplay muted loop>
+            <source src="img/SipandSavor/SipandSavor-Hero.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+      </div>
+      </div>
+        <div class="column col-md-6 col-lg-5">
         <p>
           Sip and Savor focuses on creating a recipe app designed for busy young professionals who find meal planning and cooking stressful. Unlike many existing apps with cluttered navigation and limited flexibility, this app emphasizes quick, healthy, and easy-to-follow meals. Core features include simple navigation, recipe saving, step-by-step instructions, and smart ingredient substitutions—making cooking faster, easier, and more enjoyable.
         </p>
       </div>
-      <div id="my-role" class="container">
+      </div>
+
+      <div id="my-role" class="row container">
         <h2>My Role</h2>
         <p>I was responsible for end-to-end product design, including research, wireframing, visual design, and prototyping. I conducted competitive analysis, defined user needs, created scalable components, and iterated on layouts across mobile, tablet, and desktop to ensure a consistent and user-friendly experience</p>
       </div>
-      <div id="wireframing" class="container">
+      <div id="wireframing" class="row container">
         <h2>Wireframing</h2>
         <ul>
           <li>
@@ -111,8 +122,7 @@
           <li>Adapted layouts for medium (tablet) and large (desktop) screens to ensure responsiveness across devices.</li>
         </ul>
       </div>
-      <div id="problem" class="container">
-        <div class="row">
+      <div id="problem and solution" class="row container">
           <div class="col-md-6 col-lg-7">
             <h2>Problem</h2>
             <ul>
@@ -124,8 +134,6 @@
               </li>
             </ul>
           </div>
-
-          <div id="solution" class="container">
             <div class="col-md-6 col-lg-7">
               <h2>Solution</h2>
               <ul>
@@ -134,9 +142,9 @@
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-        <div id="research" class="container">
+
+          <div id="research and design" class="row container">
+            <div class ="col-md-6 col-lg-7">
             <h2>Research</h2>
             <ul>
                 <li>Competitive Analysis: Reviewed 3 recipe apps to assess navigation, usability, and feature sets.</li>
@@ -144,112 +152,112 @@
                 <li>Paper Prototype Testing: Conducted quick tests with hand-drawn flows to validate core interactions.</li>
                 <li>A/B Testing: Compared variations of homepage layouts and recipe card designs to measure clarity and engagement.</li>
             </ul>
-            <h3>Design Process</h3>
+            </div>
+            <div class ="col-md-6 col-lg-7">
+            <h2>Design Process</h2>
             <picture>
                 <source
                 srcset="img/SipandSavor/1200/Design-process.png"
                 media="(min-width: 650px)"
                 />
                 <img
-                src="img/SipandSavor/1200/Design-process.png"
+                src="img/SipandSavor/600/Design-process.png"
                 alt="Design Process"
                 />
             </picture>
+            </div>
+          </div>
+
+          <div id="mvp" class="row container">
             <h3>MVP and Jobs to be Done</h3>
+            <div class ="col-md-6 col-lg-5">
             <p>By focusing on essential features—like intuitive categorization, step-by-step guidance, and ingredient substitutions—the MVP will test whether these core features effectively address the target audience's pain points and drive engagement, laying the groundwork for future iterations based on user feedback.</p>
+            </div>
+            <div class ="col-md-6 col-lg-7">
             <picture>
             <source
             srcset="img/SipandSavor/1200/Jobs-to-be-done.png"
             media="(min-width: 650px)"
             />
             <img
-            src="img/SipandSavor/1200/Jobs-to-be-done.png"
+            src="img/SipandSavor/600/Jobs-to-be-done.png"
             alt="MVP and Jobs to be Done"
             />
             </picture>
-        </div>
+            </div>
+          </div>
 
-      <div id="user" class="container">
+
+      <div id="user" class="row container">
         <h2>User</h2>
-                <!-- User 1 -->
-        <div class="row">
-        <div class="column col-md-6 col-lg-7">
-            <!-- image column -->
-            <picture>
-            <source media="(max-width: 767px)" srcset="img/SipandSavor/1200/User 1.png" />
-            <img src="img/SipandSavor/1200/User 1.png" alt="User 1" />
-            </picture>
-        </div>
-        <div class="column col-md-6 col-lg-5-project-text">
-            <!-- text column -->
-            <p>
-            Professionals aged 25 and over balancing careers, family, and personal responsibilities.
-            </p>
-        </div>
-        </div>
-        <!-- End User 1 -->
-
-        <!-- User 2 -->
-        <div class="row">
-         <div class="column col-md-6 col-lg-5-project-text">
-            <!-- text column -->
-           <p>
-            Value convenience, speed, and ease of use in daily tools and tasks.
-            </p>
-        </div>
-        <div class="column col-md-6 col-lg-7">
-            <!-- image column -->
-            <picture>
-            <source media="(max-width: 767px)" srcset="img/SipandSavor/1200/User 2.png" />
-            <img src="img/SipandSavor/1200/User 2.png" alt="User 2" />
-            </picture>
-        </div>
-        </div>
-        <!-- End User 2 -->
-
-        <!-- User 3 -->
-        <div class="row">
-        <div class="column col-md-6 col-lg-7">
-            <!-- image column -->
-            <picture>
-            <source media="(max-width: 767px)" srcset="img/SipandSavor/1200/User 3.png" />
-            <img src="img/SipandSavor/1200/User 3.png" alt="User 3" />
-            </picture>
-        </div>
-        <div class="column col-md-6 col-lg-5-project-text">
-            <!-- text column -->
-            <p>
+          <p>
+            Professionals aged 25 and over balancing careers, family, and personal responsibilities.<br>
+            Value convenience, speed, and ease of use in daily tools and tasks.<br>
             The app is designed to support their fast-paced lifestyle with smart, intuitive features.
-            </p>
+          </p>
+
+          <!-- Row for 3 columns -->
+          <div class="three-column-row">
+            <!-- User 1 -->
+            <div class="three-col">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/SipandSavor/1200/User 1.png" />
+                <img src="img/SipandSavor/600/User 1.png" alt="User 1" />
+              </picture>
+            </div>
+
+            <!-- User 2 -->
+            <div class="three-col">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/SipandSavor/1200/User 2.png" />
+                <img src="img/SipandSavor/600/User 2.png" alt="User 2" />
+              </picture>
+            </div>
+
+            <!-- User 3 -->
+            <div class="three-col">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/SipandSavor/1200/User 3.png" />
+                <img src="img/SipandSavor/600/User 3.png" alt="User 3" />
+              </picture>
+            </div>
+          </div>
         </div>
-        </div>
-        <!-- End User 3 -->
+
+        <div id="user-flow" class="row container">
         <h3>User Flow Diagram</h3>
+          <div class="column col-md-6 col-lg-7">
         <p>The user flow is designed to ensure a seamless and intuitive experience, minimizing friction and maximizing efficiency for busy professionals. Each step in the flow supports the core needs of the target audience</p>
+        </div>
+        <div class="column col-md-6 col-lg-5">
         <picture>
           <source
             srcset="img/SipandSavor/1200/User flow diagram.png"
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/User flow diagram.png"
+            src="img/SipandSavor/600/User flow diagram.png"
             alt="User Flow Diagram"
           />
         </picture>
       </div>
-      <div id="styleguide" class="container">
+      </div>
+      <div id="styleguide" class="row container">
         <h2>Styleguide</h2>
-        <h3>Color</h3>
-        <picture>
+          <div class="column col-md-6 col-lg-7">
+            <h3>Color</h3>
+            <picture>
           <source
             srcset="img/SipandSavor/1200/Color.png"
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Color.png"
+            src="img/SipandSavor/600/Color.png"
             alt="Color Palette"
           />
         </picture>
+        </div>
+        <div class="column col-md-6 col-lg-5">
         <h3>Typography</h3>
         <picture>
           <source
@@ -257,83 +265,114 @@
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Typography.png"
-            alt="Main Navigation Card Imagery"
+            src="img/SipandSavor/600/Typography.png"
+            alt="Main Navigation Card Imagery" max-height="300px"
           />
         </picture>
+        </div>
+        </div>
+        
+        <div class="row container">
         <h3>Logo</h3>
+        <div class="column col-md-6 col-lg-5">
         <p>
           The design invites the user to enjoy both food and drinks. The gold color at the center adds a touch of sophistication to the app. The logo is fully scalable to fit any screen size. All icons were custom-designed by the creator.
         </p>
+        </div>
+        <div class="column col-md-6 col-lg-7">
         <picture>
           <source
             srcset="img/SipandSavor/1200/Logo and icons.png"
             media="(min-width: 650px)"
           />
-          <img src="img/SipandSavor/1200/Logo and icons.png" alt="Logo" />
+          <img src="img/SipandSavor/600/Logo and icons.png" alt="Logo" />
         </picture>
+        </div>
+        </div>
+        <div class="row container">
         <h3>Moodboard</h3>
+        <div class="column col-md-6 col-lg-5">
+        <p>I gathered visuals, colors, and textures to capture the overall feel and guide the app’s aesthetics.</p>
+        </div>
+        <div class="column col-md-6 col-lg-7">
         <picture>
           <source
             srcset="img/SipandSavor/1200/Mood-board.png"
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Mood-board.png"
+            src="img/SipandSavor/600/Mood-board.png"
             alt="Moodboard"
           />
         </picture>
+        </div>
+        </div>
+        <div class="row container">
         <h3>Component Examples</h3>
+       <div class="column col-md-6 col-lg-7">
         <picture>
           <source
             srcset="img/SipandSavor/1200/Components examples.png"
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Components examples.png"
+            src="img/SipandSavor/600/Components examples.png"
             alt="Component Examples"
           />
         </picture>
-        <br />
+        </div>
+        <div class="column col-md-6 col-lg-5">
         <!-- Remember to add google sheet link for the see more:Added-->
         <a
           href="https://drive.google.com/file/d/1XGLZ7Prkcw5uxUV-IUd0jJogzpUi1MI7/view?usp=drive_link"
           target="_blank"
           >Explore Full Components Design</a
         >
-
       </div>
-      <div id="design-evolution" class="container">
+      </div>
+      <div id="design-evolution" class="row container">
         <h2>Testing and Design Evolution</h2>
         <h3>Paper Prototype</h3>
+        <div class="column col-md-6 col-lg-7">
         <picture>
           <source
             srcset="img/SipandSavor/1200/Paper prototype.png"
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Paper prototype.png"
+            src="img/SipandSavor/600/Paper prototype.png"
             alt="Low-fidelity wireframes"
-          /><a
+          />
+        </picture>
+        </div>
+        <div class="column col-md-6 col-lg-5">
+          <a
           href="https://www.figma.com/proto/XG7IxwFIG1keao6toCZY9H/Recipe-App?page-id=1029%3A16815&node-id=1029-16816&p=f&viewport=60%2C191%2C0.28&t=HSmurU9uCJoscobz-1&scaling=min-zoom&content-scaling=fixed"
           target="_blank"
           >Explore the Paper Prototype</a
         >
-        </picture>
+        </div>
+      </div>
+      <div class="row container">
         <h3>Usability Testing with Low-Fidelity Wireframes</h3>
+        <div class="column col-md-6 col-lg-5">
         <p>The goal of this test was to assess the usability of this recipe app for the first time users on a mobile and desktop device. The test was conducted in order to observe if the user can complete simple tasks such as logging in, finding a recipe and interacting with other key functionalities.</p>
+        </div>
+        <div class="column col-md-6 col-lg-7">
         <picture>
           <source
             srcset="img/SipandSavor/1200/Low-fidelity.png"
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Low-fidelity.png"
+            src="img/SipandSavor/600/Low-fidelity.png"
             alt="Low-fidelity wireframes"
           />
         </picture>
+        </div>
+        </div>
+        <div class= "row container">
         <h3>Test Findings</h3>
-        <div class="row">
           <div class="col-md-6 col-lg-7">
             <h4>Issues</h4>
             <ul>
@@ -358,6 +397,7 @@
               </ul>
           </div>
           </div>
+        <div class= "row container">
         <h3>Mid-Fidelity Wireframes</h3>
         <picture>
           <source
@@ -365,19 +405,24 @@
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Mid-fidelity.png"
+            src="img/SipandSavor/600/Mid-fidelity.png"
             alt="Mid-fidelity wireframes"
           />
         </picture>
+        </div>
+        <div class= "row container">
         <h3>Feedback loop/Peer Testing</h3>
+        <div class="col-md-6 col-lg-5">
         <p>Incorporating feedback from users throughout the design process was crucial. Peer testing sessions helped uncover usability issues, validate design decisions, and guide iterations toward a more user-friendly final product.</p>
+        </div>
+        <div class="col-md-6 col-lg-5">
         <picture>
           <source
             srcset="img/SipandSavor/1200/Tester 1.png"
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Tester 1.png"
+            src="img/SipandSavor/600/Tester 1.png"
             alt="Peer Testing"
           />
           <source
@@ -385,7 +430,7 @@
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Tester 2.png"
+            src="img/SipandSavor/600/Tester 2.png"
             alt="Peer Testing"
            />
             <source
@@ -393,12 +438,14 @@
                 media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Tester 3.png"
+            src="img/SipandSavor/600/Tester 3.png"
             alt="Peer Testing"
           />
         </picture>
-      </div>
-      <div id="iterations" class="container">
+        </div>
+        </div>
+
+      <div id="iterations" class="row container">
         <h2>Summary of Iterations</h2>
         <p>
           This app began as my second project, created when I was still learning the basics of design. As my skills grew, I revisited it with two redesigns: first refining the layout and launch screen, then building scalable components to simplify recipe management and navigation. The result is a more modern, user-friendly app that reflects my progress as a designer.
@@ -409,10 +456,12 @@
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Iterations.png"
+            src="img/SipandSavor/600/Iterations.png"
             alt="User Testing"
           />
         </picture>
+        </div>
+        <div class="row container">
         <h2>Responsive Iterations</h2>
         <p>I iterated on tablet and desktop layouts—optimizing spacing and touch usability for medium screens, and expanding grids, visuals, and hierarchy for larger screens.</p>
         <picture>
@@ -421,12 +470,13 @@
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Responsive screen iterations.png"
+            src="img/SipandSavor/600/Responsive screen iterations.png"
             alt="User Testing"
           />
         </picture>
       </div>
-      <div id="Sip and Savor" class="container">
+
+      <div id="Sip and Savor" class="row container">
         <h2>Sip and Savor Final UI(Mobile)</h2>
         <picture>
           <source
@@ -434,12 +484,14 @@
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/Final UI.png"
+            src="img/SipandSavor/600/Final UI.png"
             alt="Final UI"
           />
         </picture>
       </div>
-      <div id="reflections" class="container">
+
+      <div id="reflections and next steps" class="row container">
+      <div class="col-md-6 col-lg-7">
         <h2>Reflections</h2>
         <ul>
           <li>Test, test and again test...</li>
@@ -447,25 +499,27 @@
           <li>Designing Sip and Savor emphasized the importance of balancing simplicity with functionality.</li>
         </ul>
       </div>
-      <div id="next-steps" class="container">
+      <div class="col-md-6 col-lg-5">
         <h2>Next Steps</h2>
         <ul>
           <li>Create personalized meal prep plan option for more tailored user experience</li>
           <li>Create an option with AI integration to help users utilize ingredients they have in hand</li>
           <li>Carry out tests to understand how users interact with the new features, as well as understand how intuitive is the app for the users outside the targeted age group, and possibly adjust to accommodate broader population</li>
         </ul>
+        </div>
+
         <picture>
           <source
             srcset="img/SipandSavor/1200/End Mockup.png"
             media="(min-width: 650px)"
           />
           <img
-            src="img/SipandSavor/1200/End Mockup.png"
+            src="img/SipandSavor/600/End Mockup.png"
             alt="Reflections"
           />
         </picture>
       </div>
-      <div id="prototype" class="container">
+      <div id="prototype" class="row container">
         <h2>Prototype</h2>
         <p>
           Curious how it all comes together? Explore the interactive prototype :
