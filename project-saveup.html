@@ -31,24 +31,21 @@
   <body id="page-saveup" class="projects">
     <header>
       <div class="container">
-        <div class="navtoggle" id="myNavtoggle">
-          <a href="index.html"
-            ><img src="img/Logo-AA.svg" alt="Arpine Azatyan" class="site-logo"
-          /></a>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="index.html#work"> My work</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="icon">
-                <a href="javascript:void(0);" onclick="menuToggle()"
-                  ><i class="fas fa-bars"></i
-                ></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+       <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="logo-link"><img class="site-logo" src="img/Logo-AA.svg" alt=""></a>
+        <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+          <i class="fas fa-bars"></i>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#work">My work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
       </div>
     </header>
     <main>
@@ -478,7 +475,7 @@
         <p class="contact-primary">
           <a
             class="btn btn-email"
-            href="mailto:az.arpine@gmail.com"
+            href="mailto:arpine.uiux@gmail.com"
             aria-label="Email Arpine Azatyan"
           >
             <img
@@ -530,7 +527,14 @@
         <p class="copyright">© Arpine Azatyan 2025</p>
       </section>
     </footer>
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button type="button" class="lightbox__close" aria-label="Close"><i class="fas fa-xmark"></i></button>
+        <img class="lightbox__img" alt="">
+      </div>
+
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/lightbox.js"></script>
     <script src="js/scripts.js"></script>
+   
   </body>
 </html>

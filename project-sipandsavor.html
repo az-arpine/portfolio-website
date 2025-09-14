@@ -31,24 +31,21 @@
   <body id="page-sipandsavor" class="projects">
     <header>
       <div class="container">
-        <div class="navtoggle" id="myNavtoggle">
-          <a href="index.html"
-            ><img src="img/Logo-AA.svg" alt="Arpine Azatyan" class="site-logo"
-          /></a>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="index.html#work"> My work</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="icon">
-                <a href="javascript:void(0);" onclick="menuToggle()"
-                  ><i class="fas fa-bars"></i
-                ></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+       <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="logo-link"><img class="site-logo" src="img/Logo-AA.svg" alt=""></a>
+        <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+          <i class="fas fa-bars"></i>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#work">My work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
       </div>
     </header>
     <main>
@@ -107,21 +104,6 @@
         <h2>My Role</h2>
         <p>I was responsible for end-to-end product design, including research, wireframing, visual design, and prototyping. I conducted competitive analysis, defined user needs, created scalable components, and iterated on layouts across mobile, tablet, and desktop to ensure a consistent and user-friendly experience</p>
       </div>
-      <div id="wireframing" class="row container">
-        <h2>Wireframing</h2>
-        <ul>
-          <li>
-            Created low-fidelity wireframes to outline core user flows.
-          </li>
-          <li>Explored multiple layout options for recipe browsing and saving.</li>
-          <li>Defined navigation patterns and prioritized key features.</li>
-          <li>Tested wireframes early to identify usability issues.</li>
-          <li>Iterated quickly before moving into high-fidelity design.</li>
-          <li>First Redesign: Refined the layout and revamped the launch screen for smoother onboarding.</li>
-          <li>Second Redesign: Built scalable components, enlarged recipe cards, reduced color noise, and improved hierarchy for better navigation and usability.</li>
-          <li>Adapted layouts for medium (tablet) and large (desktop) screens to ensure responsiveness across devices.</li>
-        </ul>
-      </div>
       <div id="problem and solution" class="row container">
           <div class="col-md-6 col-lg-7">
             <h2>Problem</h2>
@@ -142,7 +124,7 @@
               </ul>
             </div>
           </div>
-
+          
           <div id="research and design" class="row container">
             <div class ="col-md-6 col-lg-7">
             <h2>Research</h2>
@@ -155,6 +137,7 @@
             </div>
             <div class ="col-md-6 col-lg-7">
             <h2>Design Process</h2>
+            <a href="img/SipandSavor/1200/Design-process.png" data-zoom class="zoom">
             <picture>
                 <source
                 srcset="img/SipandSavor/1200/Design-process.png"
@@ -165,8 +148,23 @@
                 alt="Design Process"
                 />
             </picture>
+            </a>
             </div>
           </div>
+
+          <div id="design-thinking" class="row container">
+        <h2>Design Thinking</h2>
+        <picture>
+          <source
+            srcset="img/SipandSavor/1200/Design-thinking.png"
+            media="(min-width: 650px)"
+          />
+          <img
+            src="img/SipandSavor/1200/Design-thinking.png"
+            alt="Design Thinking"
+          />
+        </picture>
+      </div>
 
           <div id="mvp" class="row container">
             <h3>MVP and Jobs to be Done</h3>
@@ -174,6 +172,7 @@
             <p>By focusing on essential features—like intuitive categorization, step-by-step guidance, and ingredient substitutions—the MVP will test whether these core features effectively address the target audience's pain points and drive engagement, laying the groundwork for future iterations based on user feedback.</p>
             </div>
             <div class ="col-md-6 col-lg-7">
+            <a href="img/SipandSavor/1200/Jobs-to-be-done.png" data-zoom class="zoom">
             <picture>
             <source
             srcset="img/SipandSavor/1200/Jobs-to-be-done.png"
@@ -184,6 +183,7 @@
             alt="MVP and Jobs to be Done"
             />
             </picture>
+            </a>
             </div>
           </div>
 
@@ -200,36 +200,37 @@
           <div class="three-column-row">
             <!-- User 1 -->
             <div class="three-col">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/SipandSavor/1200/User 1.png" />
-                <img src="img/SipandSavor/1200/User 1.png" alt="User 1" />
-              </picture>
+              <a data-zoom class="zoom" href="img/SipandSavor/1200/User 1.png">
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="img/SipandSavor/600/User 1.png">
+                      <img src="img/SipandSavor/1200/User 1.png" alt="User 1">
+                    </picture>
+                  </a>
             </div>
-
             <!-- User 2 -->
             <div class="three-col">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/SipandSavor/1200/User 2.png" />
-                <img src="img/SipandSavor/1200/User 2.png" alt="User 2" />
-              </picture>
+              <a href="img/SipandSavor/1200/User 2.png" data-zoom class="zoom">
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="img/SipandSavor/1200/User 2.png">
+                      <img src="img/SipandSavor/1200/User 2.png" alt="User 2">
+                    </picture>
+                  </a>
             </div>
-
             <!-- User 3 -->
             <div class="three-col">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/SipandSavor/1200/User 3.png" />
-                <img src="img/SipandSavor/1200/User 3.png" alt="User 3" />
-              </picture>
+              <a href="img/SipandSavor/1200/User 3.png" data-zoom class="zoom">
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="img/SipandSavor/600/User 3.png">
+                      <img src="img/SipandSavor/1200/User 3.png" alt="User 3">
+                    </picture>
+                  </a>
+            </div>
             </div>
           </div>
-        </div>
 
         <div id="user-flow" class="row container">
         <h3>User Flow Diagram</h3>
-          <div class="column col-md-6 col-lg-7">
         <p>The user flow is designed to ensure a seamless and intuitive experience, minimizing friction and maximizing efficiency for busy professionals. Each step in the flow supports the core needs of the target audience</p>
-        </div>
-        <div class="column col-md-6 col-lg-5">
         <picture>
           <source
             srcset="img/SipandSavor/1200/User flow diagram.png"
@@ -241,10 +242,10 @@
           />
         </picture>
       </div>
-      </div>
       <div id="styleguide" class="row container">
         <h2>Styleguide</h2>
           <div class="column col-md-6 col-lg-7">
+            <a href="img/SipandSavor/1200/Color.png" data-zoom class="zoom">
             <h3>Color</h3>
             <picture>
           <source
@@ -256,8 +257,10 @@
             alt="Color Palette"
           />
         </picture>
+        </a>
         </div>
         <div class="column col-md-6 col-lg-5">
+          <a href="img/SipandSavor/1200/Typography.png" data-zoom class="zoom">
         <h3>Typography</h3>
         <picture>
           <source
@@ -269,6 +272,7 @@
             alt="Main Navigation Card Imagery" max-height="300px"
           />
         </picture>
+        </a>
         </div>
         </div>
         
@@ -280,6 +284,7 @@
         </p>
         </div>
         <div class="column col-md-6 col-lg-7">
+          <a href="img/SipandSavor/1200/Logo and icons.png" data-zoom class="zoom">
         <picture>
           <source
             srcset="img/SipandSavor/1200/Logo and icons.png"
@@ -287,6 +292,7 @@
           />
           <img src="img/SipandSavor/1200/Logo and icons.png" alt="Logo" />
         </picture>
+        </a>
         </div>
         </div>
         <div class="row container">
@@ -295,6 +301,7 @@
         <p>I gathered visuals, colors, and textures to capture the overall feel and guide the app’s aesthetics.</p>
         </div>
         <div class="column col-md-6 col-lg-7">
+          <a href="img/SipandSavor/1200/Mood-board.png" data-zoom class="zoom">
         <picture>
           <source
             srcset="img/SipandSavor/1200/Mood-board.png"
@@ -305,11 +312,13 @@
             alt="Moodboard"
           />
         </picture>
+        </a>
         </div>
         </div>
         <div class="row container">
         <h3>Component Examples</h3>
        <div class="column col-md-6 col-lg-7">
+        <a href="img/SipandSavor/1200/Components examples.png" data-zoom class="zoom">
         <picture>
           <source
             srcset="img/SipandSavor/1200/Components examples.png"
@@ -320,6 +329,7 @@
             alt="Component Examples"
           />
         </picture>
+        </a>
         </div>
         <div class="column col-md-6 col-lg-5">
         <!-- Remember to add google sheet link for the see more:Added-->
@@ -333,7 +343,6 @@
       <div id="design-evolution" class="row container">
         <h2>Testing and Design Evolution</h2>
         <h3>Paper Prototype</h3>
-        <div class="column col-md-6 col-lg-7">
         <picture>
           <source
             srcset="img/SipandSavor/1200/Paper prototype.png"
@@ -344,21 +353,17 @@
             alt="Low-fidelity wireframes"
           />
         </picture>
-        </div>
-        <div class="column col-md-6 col-lg-5">
           <a
           href="https://www.figma.com/proto/XG7IxwFIG1keao6toCZY9H/Recipe-App?page-id=1029%3A16815&node-id=1029-16816&p=f&viewport=60%2C191%2C0.28&t=HSmurU9uCJoscobz-1&scaling=min-zoom&content-scaling=fixed"
           target="_blank"
           >Explore the Paper Prototype</a
         >
         </div>
-      </div>
+
       <div class="row container">
         <h3>Usability Testing with Low-Fidelity Wireframes</h3>
-        <div class="column col-md-6 col-lg-5">
         <p>The goal of this test was to assess the usability of this recipe app for the first time users on a mobile and desktop device. The test was conducted in order to observe if the user can complete simple tasks such as logging in, finding a recipe and interacting with other key functionalities.</p>
-        </div>
-        <div class="column col-md-6 col-lg-7">
+
         <picture>
           <source
             srcset="img/SipandSavor/1200/Low-fidelity.png"
@@ -369,7 +374,6 @@
             alt="Low-fidelity wireframes"
           />
         </picture>
-        </div>
         </div>
         <div class= "row container">
         <h3>Test Findings</h3>
@@ -416,6 +420,7 @@
         <p>Incorporating feedback from users throughout the design process was crucial. Peer testing sessions helped uncover usability issues, validate design decisions, and guide iterations toward a more user-friendly final product.</p>
         </div>
         <div class="col-md-6 col-lg-5">
+          <a href="img/SipandSavor/1200/Tester 1.png" data-zoom class="zoom">
         <picture>
           <source
             srcset="img/SipandSavor/1200/Tester 1.png"
@@ -425,6 +430,10 @@
             src="img/SipandSavor/1200/Tester 1.png"
             alt="Peer Testing"
           />
+        </picture>
+        </a>
+        <a href="img/SipandSavor/1200/Tester 2.png" data-zoom class="zoom">
+        <picture>
           <source
             srcset="img/SipandSavor/1200/Tester 2.png"
             media="(min-width: 650px)"
@@ -433,6 +442,10 @@
             src="img/SipandSavor/1200/Tester 2.png"
             alt="Peer Testing"
            />
+        </picture>
+        </a>
+        <a href="img/SipandSavor/1200/Tester 3.png" data-zoom class="zoom">
+        <picture> 
             <source
                 srcset="img/SipandSavor/1200/Tester 3.png"
                 media="(min-width: 650px)"
@@ -442,6 +455,7 @@
             alt="Peer Testing"
           />
         </picture>
+        </a>
         </div>
         </div>
 
@@ -464,6 +478,7 @@
         <div class="row container">
         <h2>Responsive Iterations</h2>
         <p>I iterated on tablet and desktop layouts—optimizing spacing and touch usability for medium screens, and expanding grids, visuals, and hierarchy for larger screens.</p>
+
         <picture>
           <source
             srcset="img/SipandSavor/1200/Responsive screen iterations.png"
@@ -541,7 +556,7 @@
        <p class="contact-primary">
           <a
             class="btn btn-email"
-            href="mailto:az.arpine@gmail.com"
+            href="mailto:arpine.uiux@gmail.com"
             aria-label="Email Arpine Azatyan"
           >
             <img
@@ -592,7 +607,14 @@
         <p class="copyright">© Arpine Azatyan 2025</p>
       </section>
     </footer>
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button type="button" class="lightbox__close" aria-label="Close"><i class="fas fa-xmark"></i></button>
+        <img class="lightbox__img" alt="">
+      </div>
+
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/lightbox.js"></script>
     <script src="js/scripts.js"></script>
+   
   </body>
 </html>

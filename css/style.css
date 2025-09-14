@@ -110,41 +110,7 @@ a:hover::after {
   width: 100%;
 }
 
-/*.button {
-  display: inline-block;
-  background-color: #4873E3;
-  color: #f4f4f6;
-  border-radius: 3px;
-  text-decoration: none;
-  transition: opacity 0.2s;
-  cursor: pointer;
-  margin-bottom: 40px;
-  transition: 0.2s opacity;
-  border-radius: 12px; padding: 12px 16px; font-weight: 600;
-}
 
-.button.contact {
-  margin-bottom: 0px;
-}
-
-  .button:hover{
-  opacity: 0.8; /* Makes the button slightly transparent when hovered 
-  color: #f4f4f6;   /* Keeps the text color consistent on hover 
-  text-decoration: none; /* No underlining on hover 
-}
-
-.button.contact {
-  background-color: transparent;
-  color: #4873e3;
-  text-transform: uppercase;
-  border: 2px solid #4873e3;
-}
-
-.button.contact:hover {
-  opacity: 0.8; /* Makes the button slightly transparent when hovered 
-  color: #4873e3;
-}
-*/
 
 a.button {
   display: inline-flex;
@@ -414,81 +380,67 @@ ul.styleguide {
 
 
 
-.navtoggle li {
-  display: none;
-}
-.navtoggle li.icon {
-  display: inline-block;
-}
-.navtoggle,
-.navtoggle.responsive {
-  position: relative;
+
+
+/* Logo never gets the underline effect */
+a.logo-link::after { content: none !important; }
+
+header .container { 
+  padding: 0 15; }
+
+/* the top bar is always a single flex row */
+.navtoggle {
+  display: flex;
   align-items: center;
+  justify-content: space-between;   /* logo left, icon right */
+  position: relative;               /* anchor for dropdown panel */
+  min-height: 56px;
 }
 
-.navtoggle li.icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
+/* make sure the icon really hugs the right edge of the container */
+.navtoggle .icon {
+  margin-left: auto;                /* pushes it to the far right */
+  display: inline-flex;
+  align-items: center;
   font-size: clamp(24px, 2vw, 32px);
-  padding-right: 0;
-  height: 48px;
-  margin: 20px 0;
+  line-height: 1;
 }
 
-.navtoggle.responsive li {
-  display: block;
-  text-align: right; /* Aligns the text to the right */
+/* base menu list (hidden on mobile by default) */
+.navtoggle nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;                    /* hidden until expanded */
 }
 
-
-.navtoggle.responsive li {
+/* expanded: show dropdown *below* the bar; logo+icon stay put */
+.navtoggle.responsive nav ul {
   display: block;
+  position: absolute;
+  top: 100%;
+  left: 0; right: 0;
+  background: #fff;
+  border-top: 1px solid #5449b680;
+  z-index: 2000;
+  padding: 8px 12px;
+}
+.navtoggle.responsive nav ul li {
   padding: 10px 0;
   border-bottom: 2px solid #5449b680;
+  text-align: right;
+}
+.navtoggle.responsive nav ul li:last-child { 
+  border-bottom: 0; 
 }
 
-.navtoggle.responsive li.icon {
-  position: absolute;
-  border-bottom: none;
-}
-.container-table-of-content ul {
-  list-style: none;
-  margin: 0;
-}
-
-/* .container-table-of-content {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 15px 32px; 
-}
 
 .container-table-of-content ul {
   list-style: none;
   margin: 0;
-  padding: 0; 
 }
 
-.container-table-of-content ul li {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 8px 12px; 
-  margin-bottom: 12px; 
-  border-radius: 6px;
-  background-color: #e9edf7;
-}
-.container-table-of-content ul li a {
-  text-decoration: none;
-  color: #1a232c;
-  font-weight: 400;
-  display: block; /* whole li clickable 
 
-
-.container-table-of-content ul li a:hover {
-  color: #474d69;
-  text-decoration: underline;
-} */
 
 
 
@@ -665,6 +617,7 @@ copyright,
 
 
 
+
 /* Small screens */
 @media (max-width: 640px) {
   .btn-email {
@@ -806,8 +759,9 @@ Medium devices (640px and larger)
 }
 
   
- 
 }
+ 
+
 
 
   /* ==========================
@@ -844,18 +798,8 @@ Large devices (1024px and larger)
       align-items: center;
     }
 
-    
-    .navtoggle{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .navtoggle li {
-      display: inline-block;
-    }
-    .navtoggle li.icon {
-      display: none;
-    }
+
+  
     .site-logo {
       float: left; /* Floats the logo to the left */
       padding: 0;
@@ -870,7 +814,21 @@ Large devices (1024px and larger)
       display: flex;
       gap: 18px;
     }
+.navtoggle nav ul {
+    display: flex;
+    gap: 18px;
+    position: static;
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
+  .navtoggle .icon { display: none; }     /* no hamburger on desktop */
+  .navtoggle.responsive nav ul li {
+    border: 0; 
+    padding: 0 ; 
+    text-align: left;
 
+  }
   
 .video-container {
     max-width: 360px;        /* optional cap */
@@ -892,8 +850,6 @@ Large devices (1024px and larger)
   border-radius: 8px;
   box-sizing: border-box;
   border: 1px solid #574095;   /* light gray border */
-
-
 
 }
 
@@ -934,7 +890,99 @@ Large devices (1024px and larger)
   height: auto;
   display: block;
 }
-  
+  /* Lightbox */
+ a.zoom::after { content: none !important; } /* prevent underline effect */
+  .zoom { cursor: zoom-in; display: inline-block; }
+  .zoom picture, .zoom img { display: block; }
+  .zoom img { transition: transform .25s ease; }
+  .zoom:hover img { transform: scale(1.015); }
+
+  /* overlay container */
+  .lightbox {
+    position: fixed; inset: 0;
+    display: none;                         /* hidden by default */
+    align-items: center; justify-content: center;
+    background: rgba(0,0,0,.85);
+    z-index: 9999;                         /* above header (yours is 1000) */
+    padding: 24px;
+    cursor: zoom-out;                      /* hint: click outside to close */
+  }
+  .lightbox[aria-hidden="false"] { display: flex; }
+
+  /* image inside overlay */
+  .lightbox__img {
+    max-width: 96vw; max-height: 94vh;
+    border-radius: 10px;
+    box-shadow: 0 12px 48px rgba(0,0,0,.5);
+    object-fit: contain;
+    transform: scale(.985);
+    opacity: .001;
+    transition: transform .18s ease, opacity .18s ease;
+  }
+  .lightbox[aria-hidden="false"] .lightbox__img {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  /* close button */
+  .lightbox__close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    background: rgba(0,0,0,.65);
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    z-index: 10000;
+
+    transition: background .15s ease, transform .12s ease;
+  }
+
+  .lightbox__close i {
+    font-size: 24px; /* FA icon size inside */
+    line-height: 1;
+  }
+
+  .lightbox__close:hover { background: rgba(0,0,0,.8); transform: scale(1.05); }
+  .lightbox__close:active { transform: scale(.95); }
+
+a[data-zoom]::after { content: none !important; }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.9); /* translucent white */
+  z-index: 9999;
+  padding: 24px;
+  color: #000; /* black text */
+}
+
+.lightbox__img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+
+.lightbox__caption {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #000; /* stays black */
+
+  }
+  }
 
 
 
@@ -949,4 +997,3 @@ Extra-large devices (1920px or larger)
 ================================= */
   @media only screen and (min-width: 1920px) {
   }
-}
