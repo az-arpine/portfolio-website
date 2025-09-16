@@ -61,6 +61,12 @@ h4 {
   font-weight: 500; /* Medium */
 }
 
+.bold {
+  font-weight: 700;  /* or 'bold' */
+}
+.semi-bold {
+  font-weight: 400;  /* or 'semibold' */
+}
 img /* General images */ {
   width: 100%;
 }
