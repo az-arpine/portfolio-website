@@ -67,6 +67,12 @@ h4 {
 .semi-bold {
   font-weight: 400;  /* or 'semibold' */
 }
+
+#thanks h2 {
+  font-family: 'WindSong', cursive;
+  font-size: clamp(1.5rem, 4vw, 2.25rem); /* ~32–38px */
+  font-weight: 500; /* Semi-bold */
+}
 img /* General images */ {
   width: 100%;
 }
@@ -623,7 +629,7 @@ copyright,
 .copyright {
   margin: 14px 0 0;
   color: #b9bbcc;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
 }
 
 /* Visually hidden text for screen readers */
@@ -678,7 +684,22 @@ copyright,
 .c-gold  { color: #b58900; }   
 */
 
+.three-column-row {
+  display: flex;
+  justify-content: center;   /* centers the whole row horizontally */
+  align-items: center;       /* centers vertically (optional) */
+  flex-wrap: wrap;           /* allows wrapping on small screens */
+  gap: 1rem;                 /* space between columns */
+}
 
+.three-col {
+  flex: 0 1 30%;             /* each column takes ~30%, can shrink */
+  max-width: 300px;          /* optional: keeps them from stretching too wide */
+  display: flex;
+  justify-content: center;   /* center content inside each column */
+  align-items: center;
+  text-align: center;        /* centers text/images inside */
+}
 
 
 
@@ -717,6 +738,7 @@ copyright,
   border-radius: 6px;
   margin-bottom: 10px;
 }
+
 
 }
 /* ==============================
@@ -935,26 +957,7 @@ Large devices (1024px and larger)
   
 
 
-.three-column-row {
-  display: flex;
-  flex-wrap: wrap;       /* let them stack on small screens */
-  justify-content: space-between; /* spread evenly */
-  gap: 1rem;             /* spacing between columns */
-}
 
-.three-col {
-  flex: 1;               /* equal width columns */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.three-col picture,
-.three-col img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
   /* Lightbox */
  a.zoom::after { content: none !important; } /* prevent underline effect */
   .zoom { cursor: zoom-in; display: inline-block; }
