@@ -79,6 +79,11 @@ html {
   width: 32px; /* Set a fixed width for social icons */
   height: 32px; /* Set a fixed height for social icons */
 }
+.tools-icon {
+  width: 28px;
+  height: 28px;
+  margin-left: 6px;
+}
 
 a {
   color: #574095;
@@ -214,7 +219,61 @@ selector {
   padding: 12px 8px !important;
   margin-bottom: 8px; */
 
+  .round-container {
+  width: 40vw;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 1px solid #292033; /* outline */
+  margin: 2rem auto;
   
+  display: flex;
+  flex-direction: column;     /* stack h2 and p */
+  align-items: center;        /* center horizontally */
+  justify-content: center;    /* center vertically */
+  text-align: center;
+  padding: 20px;              /* breathing room */
+  box-sizing: border-box;
+}
+
+.round-container h2 {
+  margin: 0 0 1rem 0;         /* space below headline */
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.round-container p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.large-round-container {
+  width: 60vw;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 1px solid #292033; /* outline */
+  margin: 2rem auto;
+  
+  display: flex;
+  flex-direction: column;     /* stack h2 and p */
+  align-items: center;        /* center horizontally */
+  justify-content: center;    /* center vertically */
+  text-align: center;
+  padding: 20px;              /* breathing room */
+  box-sizing: border-box;
+}
+
+.round-container h2 {
+  margin: 0 0 1rem 0;         /* space below headline */
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.round-container p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
 
 
