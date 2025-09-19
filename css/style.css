@@ -151,6 +151,9 @@ a.button:hover {
   color: #ffffff; /* contrast text on hover */
 }
 
+a.button:visited {
+  color: #6c51b5; /* visited link color */
+}
 a.button:active {
   background-color: #23215a; /* Even darker when clicked */
   transform: translateY(0); /* Reset lift */
@@ -344,7 +347,7 @@ header {
 }
 
 .site-logo {
-  width: clamp(140px, 18vw, 220px);
+  width: clamp(32px, 18vw, 48px);
   height: auto;
   flex: 0 0 auto;
   float: none !important;     /* kill earlier float rules */
